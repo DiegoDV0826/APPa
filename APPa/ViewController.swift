@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MediaPlayer
 
 class ViewController: UIViewController {
 
@@ -14,6 +15,28 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    func actualizaInterfaz(){
+        let defaults = UserDefaults.standard
+        let theme = defaults.bool(forKey: "fondo")
+        if theme {
+            UIApplication.shared.windows.forEach { window in
+                window.overrideUserInterfaceStyle = .dark
+            }
+        }
+        else{
+            UIApplication.shared.windows.forEach { window in
+                window.overrideUserInterfaceStyle = .light
+            }
+        }
+        let sound = defaults.bool(forKey: "sonido")
+        let slider = MPVolumeView().subviews.first(where: { $0 is UISlider }) as? UISlider
+        if sound{
+            slider?.setValue(100, animated: false)
+        }
+        else{
+            slider?.setValue(0, animated: false)
+        }
+    }
 
 }
 

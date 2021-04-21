@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47BDB9802630D56000E33BDB /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BDB97F2630D56000E33BDB /* ConfigurationViewController.swift */; };
 		F222A388262CCDD800A6967F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222A387262CCDD800A6967F /* AppDelegate.swift */; };
 		F222A38A262CCDD800A6967F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222A389262CCDD800A6967F /* SceneDelegate.swift */; };
 		F222A38C262CCDD800A6967F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222A38B262CCDD800A6967F /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47BDB97F2630D56000E33BDB /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		F222A384262CCDD800A6967F /* APPa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APPa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F222A387262CCDD800A6967F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F222A389262CCDD800A6967F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				F222A389262CCDD800A6967F /* SceneDelegate.swift */,
 				F222A38B262CCDD800A6967F /* ViewController.swift */,
 				F222A38D262CCDD800A6967F /* Main.storyboard */,
+				47BDB97F2630D56000E33BDB /* ConfigurationViewController.swift */,
 				F222A390262CCDDB00A6967F /* Assets.xcassets */,
 				F222A392262CCDDB00A6967F /* LaunchScreen.storyboard */,
 				F222A395262CCDDB00A6967F /* Info.plist */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F222A38C262CCDD800A6967F /* ViewController.swift in Sources */,
+				47BDB9802630D56000E33BDB /* ConfigurationViewController.swift in Sources */,
 				F222A388262CCDD800A6967F /* AppDelegate.swift in Sources */,
 				F222A38A262CCDD800A6967F /* SceneDelegate.swift in Sources */,
 			);

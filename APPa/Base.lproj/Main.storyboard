@@ -543,7 +543,7 @@
         <!--Configuración-->
         <scene sceneID="Uzj-z9-IDd">
             <objects>
-                <viewController id="DdK-Ow-A99" sceneMemberID="viewController">
+                <viewController id="DdK-Ow-A99" customClass="ConfigurationViewController" customModule="APPa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WML-TQ-t1m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -552,8 +552,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fondo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqs-xg-dgb">
-                                <rect key="frame" x="64" y="192" width="76" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Modo Noche" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqs-xg-dgb">
+                                <rect key="frame" x="64" y="192" width="154" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <nil key="textColor"/>
@@ -595,6 +595,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Configuración" id="eTU-T6-xGA"/>
+                    <connections>
+                        <outlet property="scLetra" destination="WW2-v6-vQE" id="WI1-Kb-xbf"/>
+                        <outlet property="swFondo" destination="AqC-f1-McV" id="Wba-aq-bN7"/>
+                        <outlet property="swSonido" destination="R2W-Kq-EAN" id="rRX-7L-Jws"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRu-9d-vmw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
