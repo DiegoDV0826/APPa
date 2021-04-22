@@ -55,6 +55,27 @@ class ConfigurationViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         guardarDatosInterfaz()
     }
+    @IBAction func nightMode(_ sender: Any) {
+        if swFondo.isOn{
+            UIApplication.shared.windows.forEach { window in
+                window.overrideUserInterfaceStyle = .dark
+            }
+        }
+        else{
+            UIApplication.shared.windows.forEach { window in
+                window.overrideUserInterfaceStyle = .light
+            }
+        }
+    }
+    @IBAction func soundON(_ sender: Any) {
+        let slider = MPVolumeView().subviews.first(where: { $0 is UISlider }) as? UISlider
+        if swSonido.isOn{
+            slider?.setValue(100, animated: false)
+        }
+        else{
+            slider?.setValue(0, animated: false)
+        }
+    }
     /*
     // MARK: - Navigation
 
