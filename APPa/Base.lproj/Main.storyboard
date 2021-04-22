@@ -228,10 +228,10 @@
             </objects>
             <point key="canvasLocation" x="-1751" y="707"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Pagina Web-->
         <scene sceneID="C4D-sk-XBy">
             <objects>
-                <viewController id="djj-iS-f5e" sceneMemberID="viewController">
+                <viewController id="djj-iS-f5e" customClass="ViewControllerPaginaWeb" customModule="APPa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ESZ-X8-OCw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -246,6 +246,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CD1-z9-aaG">
                                 <rect key="frame" x="300" y="93" width="25" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Info:" destination="djj-iS-f5e" eventType="touchUpInside" id="TEB-SW-CKI"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bQ2-26-0Jm">
                                 <rect key="frame" x="16" y="202" width="152" height="34"/>
@@ -335,10 +338,10 @@
             </objects>
             <point key="canvasLocation" x="-3388" y="706.59670164917543"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Tipos De Cita-->
         <scene sceneID="rfs-mR-gZD">
             <objects>
-                <viewController id="5qV-cg-KoN" sceneMemberID="viewController">
+                <viewController id="5qV-cg-KoN" customClass="ViewControllerTiposDeCita" customModule="APPa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsz-4O-Eva">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -351,7 +354,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4js-eG-sNs">
-                                <rect key="frame" x="133" y="552" width="104" height="32"/>
+                                <rect key="frame" x="133" y="534" width="104" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Continuar">
@@ -445,6 +448,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6B-VW-pyL">
+                                <rect key="frame" x="234" y="125" width="25" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Info:" destination="5qV-cg-KoN" eventType="touchUpInside" id="5wC-jn-hda"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4Fg-tG-3Gt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
