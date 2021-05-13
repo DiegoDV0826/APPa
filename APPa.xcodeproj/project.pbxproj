@@ -16,6 +16,7 @@
 		F222A38F262CCDD800A6967F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F222A38D262CCDD800A6967F /* Main.storyboard */; };
 		F222A391262CCDDB00A6967F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F222A390262CCDDB00A6967F /* Assets.xcassets */; };
 		F222A394262CCDDB00A6967F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F222A392262CCDDB00A6967F /* LaunchScreen.storyboard */; };
+		F228CA85264DADD3001C6DDA /* QueTeInteresaAprenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F228CA84264DADD3001C6DDA /* QueTeInteresaAprenderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F222A390262CCDDB00A6967F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F222A393262CCDDB00A6967F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F222A395262CCDDB00A6967F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F228CA84264DADD3001C6DDA /* QueTeInteresaAprenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueTeInteresaAprenderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,8 @@
 		F222A37B262CCDD800A6967F = {
 			isa = PBXGroup;
 			children = (
+				F228CA87264DB779001C6DDA /* Sonidos */,
+				F228CA84264DADD3001C6DDA /* QueTeInteresaAprenderViewController.swift */,
 				F222A386262CCDD800A6967F /* APPa */,
 				F222A385262CCDD800A6967F /* Products */,
 			);
@@ -74,6 +78,13 @@
 				F222A395262CCDDB00A6967F /* Info.plist */,
 			);
 			path = APPa;
+			sourceTree = "<group>";
+		};
+		F228CA87264DB779001C6DDA /* Sonidos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sonidos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +161,7 @@
 				F222A38C262CCDD800A6967F /* ViewController.swift in Sources */,
 				D3807548263120BB000EA355 /* ViewControllerTiposDeCita.swift in Sources */,
 				47BDB9802630D56000E33BDB /* ConfigurationViewController.swift in Sources */,
+				F228CA85264DADD3001C6DDA /* QueTeInteresaAprenderViewController.swift in Sources */,
 				F222A388262CCDD800A6967F /* AppDelegate.swift in Sources */,
 				F222A38A262CCDD800A6967F /* SceneDelegate.swift in Sources */,
 			);
@@ -300,6 +312,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = APPa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,6 +331,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = APPa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
