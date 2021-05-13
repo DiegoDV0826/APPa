@@ -12,7 +12,6 @@ class ConfigurationViewController: UIViewController {
 
     @IBOutlet weak var swFondo: UISwitch!
     @IBOutlet weak var swSonido: UISwitch!
-    @IBOutlet weak var scLetra: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         let app = UIApplication.shared
@@ -26,7 +25,6 @@ class ConfigurationViewController: UIViewController {
         let defaults = UserDefaults.standard
         defaults.setValue(swFondo.isOn, forKey: "fondo")
         defaults.setValue(swSonido.isOn, forKey: "sonido")
-        defaults.setValue(scLetra.selectedSegmentIndex, forKey: "letra")
         if swFondo.isOn{
             UIApplication.shared.windows.forEach { window in
                 window.overrideUserInterfaceStyle = .dark
@@ -50,7 +48,6 @@ class ConfigurationViewController: UIViewController {
         let defaults = UserDefaults.standard
         swFondo.isOn = defaults.bool(forKey: "fondo")
         swSonido.isOn = defaults.bool(forKey: "sonido")
-        scLetra.selectedSegmentIndex =		 defaults.integer(forKey: "letra")
     }
     override func viewWillDisappear(_ animated: Bool) {
         guardarDatosInterfaz()

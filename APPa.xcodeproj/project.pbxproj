@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4777F63A264DD7980072C431 /* TableViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4777F639264DD7980072C431 /* TableViewControllerInfo.swift */; };
 		47BDB9802630D56000E33BDB /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BDB97F2630D56000E33BDB /* ConfigurationViewController.swift */; };
 		D380754526311FBC000EA355 /* ViewControllerPaginaWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D380754426311FBC000EA355 /* ViewControllerPaginaWeb.swift */; };
 		D3807548263120BB000EA355 /* ViewControllerTiposDeCita.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3807547263120BB000EA355 /* ViewControllerTiposDeCita.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4777F639264DD7980072C431 /* TableViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerInfo.swift; sourceTree = "<group>"; };
 		47BDB97F2630D56000E33BDB /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		D380754426311FBC000EA355 /* ViewControllerPaginaWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPaginaWeb.swift; sourceTree = "<group>"; };
 		D3807547263120BB000EA355 /* ViewControllerTiposDeCita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTiposDeCita.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				F222A389262CCDD800A6967F /* SceneDelegate.swift */,
 				F222A38B262CCDD800A6967F /* ViewController.swift */,
 				F222A38D262CCDD800A6967F /* Main.storyboard */,
+				4777F639264DD7980072C431 /* TableViewControllerInfo.swift */,
 				D3807547263120BB000EA355 /* ViewControllerTiposDeCita.swift */,
 				D380754426311FBC000EA355 /* ViewControllerPaginaWeb.swift */,
 				47BDB97F2630D56000E33BDB /* ConfigurationViewController.swift */,
@@ -160,6 +163,7 @@
 				D380754526311FBC000EA355 /* ViewControllerPaginaWeb.swift in Sources */,
 				F222A38C262CCDD800A6967F /* ViewController.swift in Sources */,
 				D3807548263120BB000EA355 /* ViewControllerTiposDeCita.swift in Sources */,
+				4777F63A264DD7980072C431 /* TableViewControllerInfo.swift in Sources */,
 				47BDB9802630D56000E33BDB /* ConfigurationViewController.swift in Sources */,
 				F228CA85264DADD3001C6DDA /* QueTeInteresaAprenderViewController.swift in Sources */,
 				F222A388262CCDD800A6967F /* AppDelegate.swift in Sources */,
