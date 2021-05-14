@@ -11,7 +11,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
     var info: [String] = ["Nombre del autor", "Lugar de publicacion", "Editorial", "Año", "Titulo", "Edicion"]
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBOutlet weak var secondCollectionView: UICollectionView!
+    @IBOutlet weak var firstCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,11 +21,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         //collectionView?.dataSource = self
         let gesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPressGesture(_:)))
         gesture.minimumPressDuration = 0.0025
-        collectionView?.addGestureRecognizer(gesture)
+        firstCollectionView?.addGestureRecognizer(gesture)
     }
     
     @objc func handleLongPressGesture(_ gesture: UILongPressGestureRecognizer){
-        guard let collectionView = collectionView else {
+        guard let collectionView = firstCollectionView else {
             return
         }
         switch gesture.state {
@@ -42,7 +44,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 143, height: 65)
+        return CGSize(width: 143, height: 45)
     }
     
     /*override func viewDidLayoutSubviews() {
@@ -56,9 +58,18 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         var cell = UICollectionViewCell()
-        if let infoCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? CollectionViewCell {
+        if let infoCell = firstCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? CollectionViewCell {
             infoCell.configure(with: info[indexPath.row])
             cell = infoCell
+            cell.backgroundColor = UIColor.white
+            cell.layer.borderColor = UIColor.gray.cgColor
+            cell.layer.borderWidth = 1
+            cell.layer.cornerRadius = 5
+        }
+        if collectionView == secondCollectionView {
+            let cell2 = secondCollectionView.dequeueReusableCell(withReuseIdentifier: "cell2", for: indexPath) as! CollectionViewCell2
+            cell2.backgroundColor = UIColor(red: 205/255, green: 205/255, blue: 205/255, alpha: 1)
+            return cell2
         }
         return cell
     }

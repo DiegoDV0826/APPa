@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41A46B12264EEDD6003F5089 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A46B11264EEDD6003F5089 /* CollectionViewCell.swift */; };
+		41A46B15264EEF33003F5089 /* CollectionViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A46B14264EEF33003F5089 /* CollectionViewCell2.swift */; };
 		4777F63A264DD7980072C431 /* TableViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4777F639264DD7980072C431 /* TableViewControllerInfo.swift */; };
 		47BDB9802630D56000E33BDB /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BDB97F2630D56000E33BDB /* ConfigurationViewController.swift */; };
 		D380754526311FBC000EA355 /* ViewControllerPaginaWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D380754426311FBC000EA355 /* ViewControllerPaginaWeb.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41A46B11264EEDD6003F5089 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = APPa/CollectionViewCell.swift; sourceTree = "<group>"; };
+		41A46B14264EEF33003F5089 /* CollectionViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CollectionViewCell2.swift; path = APPa/CollectionViewCell2.swift; sourceTree = "<group>"; };
 		4777F639264DD7980072C431 /* TableViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerInfo.swift; sourceTree = "<group>"; };
 		47BDB97F2630D56000E33BDB /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		D380754426311FBC000EA355 /* ViewControllerPaginaWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPaginaWeb.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 		F222A37B262CCDD800A6967F = {
 			isa = PBXGroup;
 			children = (
+				41A46B14264EEF33003F5089 /* CollectionViewCell2.swift */,
+				41A46B11264EEDD6003F5089 /* CollectionViewCell.swift */,
 				F279EB51264EE168005424D6 /* EdicionViewController.swift */,
 				F279EB4E264EDC29005424D6 /* TituloViewController.swift */,
 				F279EB4B264ED9F9005424D6 /* AnoViewController.swift */,
@@ -192,6 +198,7 @@
 				D380754526311FBC000EA355 /* ViewControllerPaginaWeb.swift in Sources */,
 				F279EB4F264EDC29005424D6 /* TituloViewController.swift in Sources */,
 				D3E2AF21264E6045009534F6 /* InfoViewController.swift in Sources */,
+				41A46B15264EEF33003F5089 /* CollectionViewCell2.swift in Sources */,
 				F220B98A264DFE7000BA5929 /* AutorViewController.swift in Sources */,
 				F222A38C262CCDD800A6967F /* ViewController.swift in Sources */,
 				D3807548263120BB000EA355 /* ViewControllerTiposDeCita.swift in Sources */,
@@ -199,6 +206,7 @@
 				4777F63A264DD7980072C431 /* TableViewControllerInfo.swift in Sources */,
 				F279EB52264EE168005424D6 /* EdicionViewController.swift in Sources */,
 				F279EB4C264ED9F9005424D6 /* AnoViewController.swift in Sources */,
+				41A46B12264EEDD6003F5089 /* CollectionViewCell.swift in Sources */,
 				47BDB9802630D56000E33BDB /* ConfigurationViewController.swift in Sources */,
 				F279EB49264ED79A005424D6 /* EditorialViewController.swift in Sources */,
 				F228CA85264DADD3001C6DDA /* QueTeInteresaAprenderViewController.swift in Sources */,
