@@ -7,15 +7,22 @@
 
 import UIKit
 import MediaPlayer
+import AVFoundation
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var btnComenzar: UIButton!
+    
+    
+    var audioPlayer: AVAudioPlayer?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //UILabel.appearance().font = UIFont(name: "Roboto", size: 30)
         // Do any additional setup after loading the view.
     }
-
+    
     func actualizaInterfaz(){
         let defaults = UserDefaults.standard
         let theme = defaults.bool(forKey: "fondo")
@@ -37,6 +44,19 @@ class ViewController: UIViewController {
         else{
             slider?.setValue(0, animated: false)
         }
+    }
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+            let pathToSound = Bundle.main.path(forResource: "button", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            
+            do{
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {
+                
+            }
     }
 
 }

@@ -1,14 +1,14 @@
 //
-//  QueTeInteresaAprenderViewController.swift
+//  InfoViewController.swift
 //  APPa
 //
-//  Created by user189869 on 5/13/21.
+//  Created by Omar Balboa on 14/05/21.
 //
 
 import UIKit
 import AVFoundation
 
-class QueTeInteresaAprenderViewController: UIViewController {
+class InfoViewController: UIViewController {
 
     var audioPlayer: AVAudioPlayer?
     
@@ -16,7 +16,6 @@ class QueTeInteresaAprenderViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        title = "¿Qué te interesa aprender?";
     }
     
 

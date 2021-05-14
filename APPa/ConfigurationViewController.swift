@@ -7,8 +7,11 @@
 
 import UIKit
 import MediaPlayer
+import AVFoundation
 
 class ConfigurationViewController: UIViewController {
+    
+    var audioPlayer: AVAudioPlayer?
 
     @IBOutlet weak var swFondo: UISwitch!
     @IBOutlet weak var swSonido: UISwitch!
@@ -51,16 +54,43 @@ class ConfigurationViewController: UIViewController {
     }
     override func viewWillDisappear(_ animated: Bool) {
         guardarDatosInterfaz()
+        let pathToSound = Bundle.main.path(forResource: "button", ofType: "mp3")!
+        let url = URL(fileURLWithPath: pathToSound)
+        
+        do{
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {
+            
+        }
     }
     @IBAction func nightMode(_ sender: Any) {
         if swFondo.isOn{
             UIApplication.shared.windows.forEach { window in
                 window.overrideUserInterfaceStyle = .dark
             }
+            let pathToSound = Bundle.main.path(forResource: "switch", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            
+            do{
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {
+                
+            }
         }
         else{
             UIApplication.shared.windows.forEach { window in
                 window.overrideUserInterfaceStyle = .light
+            }
+            let pathToSound = Bundle.main.path(forResource: "switch", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            
+            do{
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {
+                
             }
         }
     }
@@ -68,9 +98,27 @@ class ConfigurationViewController: UIViewController {
         let slider = MPVolumeView().subviews.first(where: { $0 is UISlider }) as? UISlider
         if swSonido.isOn{
             slider?.setValue(100, animated: false)
+            let pathToSound = Bundle.main.path(forResource: "switch", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            
+            do{
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {
+                
+            }
         }
         else{
             slider?.setValue(0, animated: false)
+            let pathToSound = Bundle.main.path(forResource: "switch", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            
+            do{
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {
+                
+            }
         }
     }
     /*

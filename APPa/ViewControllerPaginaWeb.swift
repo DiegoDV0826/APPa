@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewControllerPaginaWeb: UIViewController {
 
+    var audioPlayer: AVAudioPlayer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,6 +38,18 @@ class ViewControllerPaginaWeb: UIViewController {
         alerta.addAction(accion)
         
         present(alerta, animated: true, completion: nil)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+            let pathToSound = Bundle.main.path(forResource: "button", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            
+            do{
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {
+                
+            }
     }
     
 }

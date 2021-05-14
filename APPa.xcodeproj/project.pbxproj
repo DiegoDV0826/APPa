@@ -11,6 +11,9 @@
 		47BDB9802630D56000E33BDB /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BDB97F2630D56000E33BDB /* ConfigurationViewController.swift */; };
 		D380754526311FBC000EA355 /* ViewControllerPaginaWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D380754426311FBC000EA355 /* ViewControllerPaginaWeb.swift */; };
 		D3807548263120BB000EA355 /* ViewControllerTiposDeCita.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3807547263120BB000EA355 /* ViewControllerTiposDeCita.swift */; };
+		D3E2AF1F264E5B20009534F6 /* button.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3E2AF1E264E5B20009534F6 /* button.mp3 */; };
+		D3E2AF21264E6045009534F6 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E2AF20264E6045009534F6 /* InfoViewController.swift */; };
+		D3E2AF23264E6147009534F6 /* switch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3E2AF22264E6147009534F6 /* switch.mp3 */; };
 		F220B98A264DFE7000BA5929 /* AutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220B989264DFE7000BA5929 /* AutorViewController.swift */; };
 		F220B98E264E10D200BA5929 /* LugarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220B98D264E10D200BA5929 /* LugarViewController.swift */; };
 		F222A388262CCDD800A6967F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222A387262CCDD800A6967F /* AppDelegate.swift */; };
@@ -27,6 +30,9 @@
 		47BDB97F2630D56000E33BDB /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		D380754426311FBC000EA355 /* ViewControllerPaginaWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPaginaWeb.swift; sourceTree = "<group>"; };
 		D3807547263120BB000EA355 /* ViewControllerTiposDeCita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTiposDeCita.swift; sourceTree = "<group>"; };
+		D3E2AF1E264E5B20009534F6 /* button.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = button.mp3; sourceTree = "<group>"; };
+		D3E2AF20264E6045009534F6 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		D3E2AF22264E6147009534F6 /* switch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = switch.mp3; sourceTree = "<group>"; };
 		F220B989264DFE7000BA5929 /* AutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorViewController.swift; sourceTree = "<group>"; };
 		F220B98D264E10D200BA5929 /* LugarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LugarViewController.swift; sourceTree = "<group>"; };
 		F222A384262CCDD800A6967F /* APPa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APPa.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +84,7 @@
 				F222A389262CCDD800A6967F /* SceneDelegate.swift */,
 				F222A38B262CCDD800A6967F /* ViewController.swift */,
 				F222A38D262CCDD800A6967F /* Main.storyboard */,
+				D3E2AF20264E6045009534F6 /* InfoViewController.swift */,
 				4777F639264DD7980072C431 /* TableViewControllerInfo.swift */,
 				D3807547263120BB000EA355 /* ViewControllerTiposDeCita.swift */,
 				D380754426311FBC000EA355 /* ViewControllerPaginaWeb.swift */,
@@ -92,6 +99,8 @@
 		F228CA87264DB779001C6DDA /* Sonidos */ = {
 			isa = PBXGroup;
 			children = (
+				D3E2AF22264E6147009534F6 /* switch.mp3 */,
+				D3E2AF1E264E5B20009534F6 /* button.mp3 */,
 			);
 			path = Sonidos;
 			sourceTree = "<group>";
@@ -153,8 +162,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E2AF23264E6147009534F6 /* switch.mp3 in Resources */,
 				F222A394262CCDDB00A6967F /* LaunchScreen.storyboard in Resources */,
 				F222A391262CCDDB00A6967F /* Assets.xcassets in Resources */,
+				D3E2AF1F264E5B20009534F6 /* button.mp3 in Resources */,
 				F222A38F262CCDD800A6967F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D380754526311FBC000EA355 /* ViewControllerPaginaWeb.swift in Sources */,
+				D3E2AF21264E6045009534F6 /* InfoViewController.swift in Sources */,
 				F220B98A264DFE7000BA5929 /* AutorViewController.swift in Sources */,
 				F222A38C262CCDD800A6967F /* ViewController.swift in Sources */,
 				D3807548263120BB000EA355 /* ViewControllerTiposDeCita.swift in Sources */,
