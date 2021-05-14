@@ -11,6 +11,8 @@
 		47BDB9802630D56000E33BDB /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BDB97F2630D56000E33BDB /* ConfigurationViewController.swift */; };
 		D380754526311FBC000EA355 /* ViewControllerPaginaWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D380754426311FBC000EA355 /* ViewControllerPaginaWeb.swift */; };
 		D3807548263120BB000EA355 /* ViewControllerTiposDeCita.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3807547263120BB000EA355 /* ViewControllerTiposDeCita.swift */; };
+		F220B98A264DFE7000BA5929 /* AutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220B989264DFE7000BA5929 /* AutorViewController.swift */; };
+		F220B98E264E10D200BA5929 /* LugarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220B98D264E10D200BA5929 /* LugarViewController.swift */; };
 		F222A388262CCDD800A6967F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222A387262CCDD800A6967F /* AppDelegate.swift */; };
 		F222A38A262CCDD800A6967F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222A389262CCDD800A6967F /* SceneDelegate.swift */; };
 		F222A38C262CCDD800A6967F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222A38B262CCDD800A6967F /* ViewController.swift */; };
@@ -25,6 +27,8 @@
 		47BDB97F2630D56000E33BDB /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		D380754426311FBC000EA355 /* ViewControllerPaginaWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPaginaWeb.swift; sourceTree = "<group>"; };
 		D3807547263120BB000EA355 /* ViewControllerTiposDeCita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTiposDeCita.swift; sourceTree = "<group>"; };
+		F220B989264DFE7000BA5929 /* AutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorViewController.swift; sourceTree = "<group>"; };
+		F220B98D264E10D200BA5929 /* LugarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LugarViewController.swift; sourceTree = "<group>"; };
 		F222A384262CCDD800A6967F /* APPa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APPa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F222A387262CCDD800A6967F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F222A389262CCDD800A6967F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,8 @@
 		F222A37B262CCDD800A6967F = {
 			isa = PBXGroup;
 			children = (
+				F220B98D264E10D200BA5929 /* LugarViewController.swift */,
+				F220B989264DFE7000BA5929 /* AutorViewController.swift */,
 				F228CA87264DB779001C6DDA /* Sonidos */,
 				F228CA84264DADD3001C6DDA /* QueTeInteresaAprenderViewController.swift */,
 				F222A386262CCDD800A6967F /* APPa */,
@@ -161,8 +167,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D380754526311FBC000EA355 /* ViewControllerPaginaWeb.swift in Sources */,
+				F220B98A264DFE7000BA5929 /* AutorViewController.swift in Sources */,
 				F222A38C262CCDD800A6967F /* ViewController.swift in Sources */,
 				D3807548263120BB000EA355 /* ViewControllerTiposDeCita.swift in Sources */,
+				F220B98E264E10D200BA5929 /* LugarViewController.swift in Sources */,
 				4777F63A264DD7980072C431 /* TableViewControllerInfo.swift in Sources */,
 				47BDB9802630D56000E33BDB /* ConfigurationViewController.swift in Sources */,
 				F228CA85264DADD3001C6DDA /* QueTeInteresaAprenderViewController.swift in Sources */,
@@ -316,7 +324,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = APPa/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,7 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = APPa/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

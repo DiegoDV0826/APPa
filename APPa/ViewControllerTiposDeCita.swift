@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewControllerTiposDeCita: UIViewController {
+class ViewControllerTiposDeCita: UIViewController, UIPopoverPresentationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,7 +15,21 @@ class ViewControllerTiposDeCita: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //var vistaPopOver
+        if segue.identifier == "autor"{
+            let vistaPopOver = segue.destination as! AutorViewController
+            vistaPopOver.popoverPresentationController!.delegate = self
+        }else if segue.identifier == "lugar"{
+            let vistaPopOver = segue.destination as! LugarViewController
+            vistaPopOver.popoverPresentationController!.delegate = self
+        }
+        
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -28,7 +42,7 @@ class ViewControllerTiposDeCita: UIViewController {
     
     
     @IBAction func Info(_ sender: UIButton) {
-        let alerta = UIAlertController(title: "Información", message: "Debes llenar los campos con el formato correcto", preferredStyle: .alert)
+        let alerta = UIAlertController(title: "Información", message: "Debes llenar los campos con el formato correcto, para ver ejemplos pulsa el boton de informacion de cada campo", preferredStyle: .alert)
 
         let accion = UIAlertAction(title: "Entendido", style: .cancel, handler: nil)
         

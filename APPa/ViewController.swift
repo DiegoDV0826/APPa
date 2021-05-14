@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        UILabel.appearance().font = UIFont(name: "Roboto", size: 30)
+        //UILabel.appearance().font = UIFont(name: "Roboto", size: 30)
         // Do any additional setup after loading the view.
     }
 
