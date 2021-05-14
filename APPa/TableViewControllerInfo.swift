@@ -99,4 +99,7 @@ class TableViewControllerInfo: UITableViewController {
        
         UIApplication.shared.open(URL(string: "https://normas-apa.org/referencias/#elementos-de-una-referencia")! as URL, options: [:], completionHandler: nil)
     }
+    @IBAction func estructuraBtn(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "https://normas-apa.org/referencias/#estructura-estandar-para-citas")! as URL, options: [:], completionHandler: nil)
+    }
 }
