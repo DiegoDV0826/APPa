@@ -23,6 +23,10 @@
 		F222A391262CCDDB00A6967F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F222A390262CCDDB00A6967F /* Assets.xcassets */; };
 		F222A394262CCDDB00A6967F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F222A392262CCDDB00A6967F /* LaunchScreen.storyboard */; };
 		F228CA85264DADD3001C6DDA /* QueTeInteresaAprenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F228CA84264DADD3001C6DDA /* QueTeInteresaAprenderViewController.swift */; };
+		F279EB49264ED79A005424D6 /* EditorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F279EB48264ED79A005424D6 /* EditorialViewController.swift */; };
+		F279EB4C264ED9F9005424D6 /* AnoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F279EB4B264ED9F9005424D6 /* AnoViewController.swift */; };
+		F279EB4F264EDC29005424D6 /* TituloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F279EB4E264EDC29005424D6 /* TituloViewController.swift */; };
+		F279EB52264EE168005424D6 /* EdicionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F279EB51264EE168005424D6 /* EdicionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		F222A393262CCDDB00A6967F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F222A395262CCDDB00A6967F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F228CA84264DADD3001C6DDA /* QueTeInteresaAprenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueTeInteresaAprenderViewController.swift; sourceTree = "<group>"; };
+		F279EB48264ED79A005424D6 /* EditorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorialViewController.swift; sourceTree = "<group>"; };
+		F279EB4B264ED9F9005424D6 /* AnoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnoViewController.swift; sourceTree = "<group>"; };
+		F279EB4E264EDC29005424D6 /* TituloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TituloViewController.swift; sourceTree = "<group>"; };
+		F279EB51264EE168005424D6 /* EdicionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdicionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 		F222A37B262CCDD800A6967F = {
 			isa = PBXGroup;
 			children = (
+				F279EB51264EE168005424D6 /* EdicionViewController.swift */,
+				F279EB4E264EDC29005424D6 /* TituloViewController.swift */,
+				F279EB4B264ED9F9005424D6 /* AnoViewController.swift */,
+				F279EB48264ED79A005424D6 /* EditorialViewController.swift */,
 				F220B98D264E10D200BA5929 /* LugarViewController.swift */,
 				F220B989264DFE7000BA5929 /* AutorViewController.swift */,
 				F228CA87264DB779001C6DDA /* Sonidos */,
@@ -178,13 +190,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D380754526311FBC000EA355 /* ViewControllerPaginaWeb.swift in Sources */,
+				F279EB4F264EDC29005424D6 /* TituloViewController.swift in Sources */,
 				D3E2AF21264E6045009534F6 /* InfoViewController.swift in Sources */,
 				F220B98A264DFE7000BA5929 /* AutorViewController.swift in Sources */,
 				F222A38C262CCDD800A6967F /* ViewController.swift in Sources */,
 				D3807548263120BB000EA355 /* ViewControllerTiposDeCita.swift in Sources */,
 				F220B98E264E10D200BA5929 /* LugarViewController.swift in Sources */,
 				4777F63A264DD7980072C431 /* TableViewControllerInfo.swift in Sources */,
+				F279EB52264EE168005424D6 /* EdicionViewController.swift in Sources */,
+				F279EB4C264ED9F9005424D6 /* AnoViewController.swift in Sources */,
 				47BDB9802630D56000E33BDB /* ConfigurationViewController.swift in Sources */,
+				F279EB49264ED79A005424D6 /* EditorialViewController.swift in Sources */,
 				F228CA85264DADD3001C6DDA /* QueTeInteresaAprenderViewController.swift in Sources */,
 				F222A388262CCDD800A6967F /* AppDelegate.swift in Sources */,
 				F222A38A262CCDD800A6967F /* SceneDelegate.swift in Sources */,

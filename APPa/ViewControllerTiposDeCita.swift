@@ -29,6 +29,18 @@ class ViewControllerTiposDeCita: UIViewController, UIPopoverPresentationControll
         }else if segue.identifier == "lugar"{
             let vistaPopOver = segue.destination as! LugarViewController
             vistaPopOver.popoverPresentationController!.delegate = self
+        }else if segue.identifier == "editorial"{
+            let vistaPopOver = segue.destination as! EditorialViewController
+            vistaPopOver.popoverPresentationController!.delegate = self
+        }else if segue.identifier == "ano"{
+            let vistaPopOver = segue.destination as! AnoViewController
+            vistaPopOver.popoverPresentationController!.delegate = self
+        }else if segue.identifier == "titulo"{
+            let vistaPopOver = segue.destination as! TituloViewController
+            vistaPopOver.popoverPresentationController!.delegate = self
+        }else if segue.identifier == "edicion"{
+            let vistaPopOver = segue.destination as! EdicionViewController
+            vistaPopOver.popoverPresentationController!.delegate = self
         }
         
     }
@@ -45,7 +57,7 @@ class ViewControllerTiposDeCita: UIViewController, UIPopoverPresentationControll
     
     
     @IBAction func Info(_ sender: UIButton) {
-        let alerta = UIAlertController(title: "Información", message: "Debes llenar los campos con el formato correcto, para ver ejemplos pulsa el boton de informacion de cada campo", preferredStyle: .alert)
+        let alerta = UIAlertController(title: "Información", message: "Debes llenar los campos con el formato correcto,en caso de no contar con algun dato, deja el espacio sin llenar. Para ver ejemplos pulsa el boton de informacion de cada campo", preferredStyle: .alert)
 
         let accion = UIAlertAction(title: "Entendido", style: .cancel, handler: nil)
         

@@ -1,20 +1,19 @@
 //
-//  LugarViewController.swift
+//  EdicionViewController.swift
 //  APPa
 //
-//  Created by user189869 on 5/13/21.
+//  Created by user189869 on 5/14/21.
 //
 
 import UIKit
 
-class LugarViewController: UIViewController {
+class EdicionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        preferredContentSize = CGSize(width: 225, height: 150)
-
+        preferredContentSize = CGSize(width: 200, height: 150)
     }
     
 
