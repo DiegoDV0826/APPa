@@ -1,14 +1,14 @@
 //
-//  ViewControllerTiposDeCita.swift
+//  LibroImpresoViewController.swift
 //  APPa
 //
-//  Created by Omar Balboa on 21/04/21.
+//  Created by user189869 on 5/15/21.
 //
 
 import UIKit
 import AVFoundation
 
-class ViewControllerTiposDeCita: UIViewController, UIPopoverPresentationControllerDelegate {
+class LibroImpresoViewController: UIViewController, UIPopoverPresentationControllerDelegate {
 
     var audioPlayer: AVAudioPlayer?
     
@@ -79,3 +79,4 @@ class ViewControllerTiposDeCita: UIViewController, UIPopoverPresentationControll
     }
     
 }
+

@@ -12,10 +12,14 @@
 		4777F63A264DD7980072C431 /* TableViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4777F639264DD7980072C431 /* TableViewControllerInfo.swift */; };
 		47BDB9802630D56000E33BDB /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BDB97F2630D56000E33BDB /* ConfigurationViewController.swift */; };
 		D380754526311FBC000EA355 /* ViewControllerPaginaWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D380754426311FBC000EA355 /* ViewControllerPaginaWeb.swift */; };
-		D3807548263120BB000EA355 /* ViewControllerTiposDeCita.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3807547263120BB000EA355 /* ViewControllerTiposDeCita.swift */; };
 		D3E2AF1F264E5B20009534F6 /* button.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3E2AF1E264E5B20009534F6 /* button.mp3 */; };
 		D3E2AF21264E6045009534F6 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E2AF20264E6045009534F6 /* InfoViewController.swift */; };
 		D3E2AF23264E6147009534F6 /* switch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3E2AF22264E6147009534F6 /* switch.mp3 */; };
+		F21B31B32650634500B77615 /* LibroElectronicoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B31B22650634500B77615 /* LibroElectronicoViewController.swift */; };
+		F21B31B6265063E600B77615 /* PaginaLibroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B31B5265063E600B77615 /* PaginaLibroViewController.swift */; };
+		F21B31B92650641800B77615 /* LibroImpresoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B31B82650641800B77615 /* LibroImpresoViewController.swift */; };
+		F21B31BD2650648E00B77615 /* CapituloLibroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B31BC2650648E00B77615 /* CapituloLibroViewController.swift */; };
+		F21B31C026506ABC00B77615 /* URLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B31BF26506ABC00B77615 /* URLViewController.swift */; };
 		F220B98A264DFE7000BA5929 /* AutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220B989264DFE7000BA5929 /* AutorViewController.swift */; };
 		F220B98E264E10D200BA5929 /* LugarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220B98D264E10D200BA5929 /* LugarViewController.swift */; };
 		F222A388262CCDD800A6967F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222A387262CCDD800A6967F /* AppDelegate.swift */; };
@@ -37,10 +41,14 @@
 		4777F639264DD7980072C431 /* TableViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerInfo.swift; sourceTree = "<group>"; };
 		47BDB97F2630D56000E33BDB /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		D380754426311FBC000EA355 /* ViewControllerPaginaWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPaginaWeb.swift; sourceTree = "<group>"; };
-		D3807547263120BB000EA355 /* ViewControllerTiposDeCita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTiposDeCita.swift; sourceTree = "<group>"; };
 		D3E2AF1E264E5B20009534F6 /* button.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = button.mp3; sourceTree = "<group>"; };
 		D3E2AF20264E6045009534F6 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		D3E2AF22264E6147009534F6 /* switch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = switch.mp3; sourceTree = "<group>"; };
+		F21B31B22650634500B77615 /* LibroElectronicoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibroElectronicoViewController.swift; sourceTree = "<group>"; };
+		F21B31B5265063E600B77615 /* PaginaLibroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaLibroViewController.swift; sourceTree = "<group>"; };
+		F21B31B82650641800B77615 /* LibroImpresoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibroImpresoViewController.swift; sourceTree = "<group>"; };
+		F21B31BC2650648E00B77615 /* CapituloLibroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapituloLibroViewController.swift; sourceTree = "<group>"; };
+		F21B31BF26506ABC00B77615 /* URLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLViewController.swift; sourceTree = "<group>"; };
 		F220B989264DFE7000BA5929 /* AutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorViewController.swift; sourceTree = "<group>"; };
 		F220B98D264E10D200BA5929 /* LugarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LugarViewController.swift; sourceTree = "<group>"; };
 		F222A384262CCDD800A6967F /* APPa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APPa.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,9 +110,13 @@
 				F222A389262CCDD800A6967F /* SceneDelegate.swift */,
 				F222A38B262CCDD800A6967F /* ViewController.swift */,
 				F222A38D262CCDD800A6967F /* Main.storyboard */,
+				F21B31BF26506ABC00B77615 /* URLViewController.swift */,
 				D3E2AF20264E6045009534F6 /* InfoViewController.swift */,
 				4777F639264DD7980072C431 /* TableViewControllerInfo.swift */,
-				D3807547263120BB000EA355 /* ViewControllerTiposDeCita.swift */,
+				F21B31B22650634500B77615 /* LibroElectronicoViewController.swift */,
+				F21B31B5265063E600B77615 /* PaginaLibroViewController.swift */,
+				F21B31B82650641800B77615 /* LibroImpresoViewController.swift */,
+				F21B31BC2650648E00B77615 /* CapituloLibroViewController.swift */,
 				D380754426311FBC000EA355 /* ViewControllerPaginaWeb.swift */,
 				47BDB97F2630D56000E33BDB /* ConfigurationViewController.swift */,
 				F222A390262CCDDB00A6967F /* Assets.xcassets */,
@@ -201,16 +213,20 @@
 				41A46B15264EEF33003F5089 /* CollectionViewCell2.swift in Sources */,
 				F220B98A264DFE7000BA5929 /* AutorViewController.swift in Sources */,
 				F222A38C262CCDD800A6967F /* ViewController.swift in Sources */,
-				D3807548263120BB000EA355 /* ViewControllerTiposDeCita.swift in Sources */,
 				F220B98E264E10D200BA5929 /* LugarViewController.swift in Sources */,
+				F21B31C026506ABC00B77615 /* URLViewController.swift in Sources */,
 				4777F63A264DD7980072C431 /* TableViewControllerInfo.swift in Sources */,
+				F21B31BD2650648E00B77615 /* CapituloLibroViewController.swift in Sources */,
 				F279EB52264EE168005424D6 /* EdicionViewController.swift in Sources */,
 				F279EB4C264ED9F9005424D6 /* AnoViewController.swift in Sources */,
+				F21B31B32650634500B77615 /* LibroElectronicoViewController.swift in Sources */,
 				41A46B12264EEDD6003F5089 /* CollectionViewCell.swift in Sources */,
 				47BDB9802630D56000E33BDB /* ConfigurationViewController.swift in Sources */,
 				F279EB49264ED79A005424D6 /* EditorialViewController.swift in Sources */,
 				F228CA85264DADD3001C6DDA /* QueTeInteresaAprenderViewController.swift in Sources */,
 				F222A388262CCDD800A6967F /* AppDelegate.swift in Sources */,
+				F21B31B6265063E600B77615 /* PaginaLibroViewController.swift in Sources */,
+				F21B31B92650641800B77615 /* LibroImpresoViewController.swift in Sources */,
 				F222A38A262CCDD800A6967F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
