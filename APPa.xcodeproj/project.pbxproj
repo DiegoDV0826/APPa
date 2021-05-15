@@ -21,6 +21,7 @@
 		F21B31BD2650648E00B77615 /* CapituloLibroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B31BC2650648E00B77615 /* CapituloLibroViewController.swift */; };
 		F21B31C026506ABC00B77615 /* URLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B31BF26506ABC00B77615 /* URLViewController.swift */; };
 		F21B31C326507AA700B77615 /* LibroEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B31C226507AA700B77615 /* LibroEditorViewController.swift */; };
+		F21B31C62650947800B77615 /* PaginaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B31C52650947800B77615 /* PaginaViewController.swift */; };
 		F220B98A264DFE7000BA5929 /* AutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220B989264DFE7000BA5929 /* AutorViewController.swift */; };
 		F220B98E264E10D200BA5929 /* LugarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220B98D264E10D200BA5929 /* LugarViewController.swift */; };
 		F222A388262CCDD800A6967F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222A387262CCDD800A6967F /* AppDelegate.swift */; };
@@ -51,6 +52,7 @@
 		F21B31BC2650648E00B77615 /* CapituloLibroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapituloLibroViewController.swift; sourceTree = "<group>"; };
 		F21B31BF26506ABC00B77615 /* URLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLViewController.swift; sourceTree = "<group>"; };
 		F21B31C226507AA700B77615 /* LibroEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibroEditorViewController.swift; sourceTree = "<group>"; };
+		F21B31C52650947800B77615 /* PaginaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaViewController.swift; sourceTree = "<group>"; };
 		F220B989264DFE7000BA5929 /* AutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorViewController.swift; sourceTree = "<group>"; };
 		F220B98D264E10D200BA5929 /* LugarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LugarViewController.swift; sourceTree = "<group>"; };
 		F222A384262CCDD800A6967F /* APPa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APPa.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +84,7 @@
 		F222A37B262CCDD800A6967F = {
 			isa = PBXGroup;
 			children = (
+				F21B31C52650947800B77615 /* PaginaViewController.swift */,
 				F21B31C226507AA700B77615 /* LibroEditorViewController.swift */,
 				41A46B14264EEF33003F5089 /* CollectionViewCell2.swift */,
 				41A46B11264EEDD6003F5089 /* CollectionViewCell.swift */,
@@ -219,6 +222,7 @@
 				F222A38C262CCDD800A6967F /* ViewController.swift in Sources */,
 				F220B98E264E10D200BA5929 /* LugarViewController.swift in Sources */,
 				F21B31C026506ABC00B77615 /* URLViewController.swift in Sources */,
+				F21B31C62650947800B77615 /* PaginaViewController.swift in Sources */,
 				4777F63A264DD7980072C431 /* TableViewControllerInfo.swift in Sources */,
 				F21B31BD2650648E00B77615 /* CapituloLibroViewController.swift in Sources */,
 				F279EB52264EE168005424D6 /* EdicionViewController.swift in Sources */,
