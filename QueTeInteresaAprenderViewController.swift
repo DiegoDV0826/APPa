@@ -36,7 +36,11 @@ class QueTeInteresaAprenderViewController: UIViewController {
             
             do{
                 audioPlayer = try AVAudioPlayer(contentsOf: url)
-                audioPlayer?.play()
+                let defaults = UserDefaults.standard
+                let sound = defaults.bool(forKey: "sonido")
+                if sound {
+                    audioPlayer?.play()
+                }
             } catch {
                 
             }

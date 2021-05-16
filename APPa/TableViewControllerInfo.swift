@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class TableViewControllerInfo: UITableViewController {
-
+    
+    var audioPlayer: AVAudioPlayer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -86,7 +89,25 @@ class TableViewControllerInfo: UITableViewController {
     }
     */
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+    }
     
+    override func viewWillDisappear(_ animated: Bool) {
+            let pathToSound = Bundle.main.path(forResource: "button", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            
+            do{
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                let defaults = UserDefaults.standard
+                let sound = defaults.bool(forKey: "sonido")
+                if sound {
+                    audioPlayer?.play()
+                }
+            } catch {
+                
+            }
+    }
     
     //MARK: - Button Hyperlinks
     
@@ -101,5 +122,8 @@ class TableViewControllerInfo: UITableViewController {
     }
     @IBAction func estructuraBtn(_ sender: Any) {
         UIApplication.shared.open(URL(string: "https://normas-apa.org/referencias/#estructura-estandar-para-citas")! as URL, options: [:], completionHandler: nil)
+    }
+    @IBAction func ejemplosBtn(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "https://normas-apa.org/referencias/citar-libro/#ejemplos")! as URL, options: [:], completionHandler: nil)
     }
 }
