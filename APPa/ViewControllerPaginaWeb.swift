@@ -14,6 +14,7 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
     var audioPlayer: AVAudioPlayer?
     var info: [String] = ["Renteria Salazar, P.", "Bogotá, Colombia", "Renovacion Urbana", "2006", "El comienzo de la renovación", "Ed."]
     var info2: [String] = ["Nombre del autor", "Lugar de publicacion", "Editorial", "Año", "Titulo", "Edicion"]
+    var source : IndexPath = []
     
     @IBOutlet weak var firstCollectionView: UICollectionView!
     @IBOutlet weak var secondCollectionView: UICollectionView!
@@ -100,8 +101,7 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
         }
         else {
             let cell2 = secondCollectionView.dequeueReusableCell(withReuseIdentifier: "cell2", for: indexPath) as! CollectionViewCell2
-            /*cell2.backgroundColor = UIColor(red: 205/255, green: 205/255, blue: 205/255, alpha: 1)
-            cell2.configure(with: info2[indexPath.row])*/
+            //cell2.backgroundColor = UIColor(red: 205/255, green: 205/255, blue: 205/255, alpha: 1)
             cell2.backgroundColor = UIColor.white
             cell2.layer.borderColor = UIColor.gray.cgColor
             cell2.layer.borderWidth = 1
@@ -151,10 +151,14 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
                 if collectionView === self.secondCollectionView
                 {
                     self.info2.insert(item.dragItem.localObject as! String, at: indexPath.row)
+                    info.remove(at: source.row)
+                    firstCollectionView.deleteItems(at: [source])
                 }
                 else
                 {
                     self.info.insert(item.dragItem.localObject as! String, at: indexPath.row)
+                    info2.remove(at: source.row)
+                    secondCollectionView.deleteItems(at: [source])
                 }
                 indexPaths.append(indexPath)
             }
@@ -165,6 +169,7 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
     func collectionView(_ collectionView: UICollectionView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem]
     {
         let item = collectionView == firstCollectionView ? self.info[indexPath.row] : self.info2[indexPath.row]
+        source = indexPath
         let itemProvider = NSItemProvider(object: item as NSString)
         let dragItem = UIDragItem(itemProvider: itemProvider)
         dragItem.localObject = item
@@ -178,17 +183,6 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
         let dragItem = UIDragItem(itemProvider: itemProvider)
         dragItem.localObject = item
         return [dragItem]
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, dragPreviewParametersForItemAt indexPath: IndexPath) -> UIDragPreviewParameters?
-    {
-        if collectionView == firstCollectionView
-        {
-            let previewParameters = UIDragPreviewParameters()
-            previewParameters.visiblePath = UIBezierPath(rect: CGRect(x: 25, y: 25, width: 120, height: 120))
-            return previewParameters
-        }
-        return nil
     }
     
     func collectionView(_ collectionView: UICollectionView, canHandle session: UIDropSession) -> Bool
@@ -206,7 +200,7 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
             }
             else
             {
-                return UICollectionViewDropProposal(operation: .forbidden)
+                return UICollectionViewDropProposal(operation: .copy, intent: .insertAtDestinationIndexPath)
             }
         }
         else

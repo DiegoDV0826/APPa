@@ -269,7 +269,7 @@
                                 <rect key="frame" x="300" y="93" width="25" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="Info:" destination="djj-iS-f5e" eventType="touchUpInside" id="TEB-SW-CKI"/>
+                                    <action selector="Info:" destination="djj-iS-f5e" eventType="touchUpInside" id="828-0f-HdJ"/>
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lrY-Ji-cQa">
@@ -2374,12 +2374,12 @@ Autor(es).(año).Título del trabajo.(página) Editorial.  Si se cuenta con 
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6MV-Vz-Dq0"/>
-        <segue reference="KDI-HH-hna"/>
-        <segue reference="7GQ-cQ-e9z"/>
-        <segue reference="SAK-3J-LW6"/>
-        <segue reference="7zN-5I-gT6"/>
-        <segue reference="oro-kA-9Ai"/>
+        <segue reference="Yzb-7U-uDx"/>
+        <segue reference="sWe-gd-Pqw"/>
+        <segue reference="7Sd-H2-goN"/>
+        <segue reference="l7H-ei-5Aq"/>
+        <segue reference="Hfk-9F-7dE"/>
+        <segue reference="tXw-sW-c0T"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="book.closed.fill" catalog="system" width="115" height="128"/>
