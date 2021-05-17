@@ -284,14 +284,14 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="rQJ-fM-Nyr" customClass="CollectionViewCell" customModule="APPa" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nBe-5n-PJO">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbq-6r-K2e">
-                                                    <rect key="frame" x="0.0" y="0.0" width="143" height="45"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbq-6r-K2e">
+                                                    <rect key="frame" x="8" y="0.0" width="239" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -299,6 +299,7 @@
                                                 </label>
                                             </subviews>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="100" height="30"/>
                                         <connections>
                                             <outlet property="infoLbl" destination="dbq-6r-K2e" id="cjU-d6-maq"/>
                                         </connections>
@@ -327,8 +328,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPW-x9-RTb">
-                                                    <rect key="frame" x="8" y="8" width="77" height="33"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPW-x9-RTb">
+                                                    <rect key="frame" x="8" y="0.0" width="292" height="33"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -358,7 +359,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zWI-rY-Q58" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2567" y="-102"/>
+            <point key="canvasLocation" x="-2567.1999999999998" y="-102.09895052473765"/>
         </scene>
         <!--Autor View Controller-->
         <scene sceneID="YCg-Mw-XAR">
@@ -1333,9 +1334,9 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kn4-WI-vll">
                                                     <rect key="frame" x="16" y="51" width="338" height="261"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <mutableString key="text">Los campos obligatorios son los siguientes: 
+                                                    <string key="text">Los campos obligatorios son los siguientes: 
 Autor(es).(año).Título del trabajo. Editorial.  En caso de contar con la edición del libro y lugar de publicación se hace de la siguiente forma:   Autor(es). (año). título del libro.(Edición).Lugar de publicación:Editorial
-</mutableString>
+</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1387,8 +1388,8 @@ Autor(es). (año). Título del libro. Editorial. DOI o URL
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HT4-5q-Tow">
                                                     <rect key="frame" x="16" y="43" width="306" height="269"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <mutableString key="text">Los campos obligatorios son los siguientes: 
-Autor(es). (Ed.). (año). Título del trabajo. Editorial.  En caso de contar con la edición del libro y lugar de publicación se hace de la siguiente forma:   Autor(es). (Ed.). (año). título del libro.(Edición).Lugar de publicación:Editorial</mutableString>
+                                                    <string key="text">Los campos obligatorios son los siguientes: 
+Autor(es). (Ed.). (año). Título del trabajo. Editorial.  En caso de contar con la edición del libro y lugar de publicación se hace de la siguiente forma:   Autor(es). (Ed.). (año). título del libro.(Edición).Lugar de publicación:Editorial</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1413,8 +1414,8 @@ Autor(es). (Ed.). (año). Título del trabajo. Editorial.  En caso de contar
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2N-B7-u7z">
                                                     <rect key="frame" x="16" y="43" width="306" height="269"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <mutableString key="text">Los campos obligatorios son los siguientes: 
-Autor(es).(año).Título del trabajo.(página) Editorial.  Si se cuenta con la edición del libro y lugar de publicación se hace lo siguiente:  Autor(es). (año). título del libro.(página).(Edición).Lugar de publicación:Editorial</mutableString>
+                                                    <string key="text">Los campos obligatorios son los siguientes: 
+Autor(es).(año).Título del trabajo.(página) Editorial.  Si se cuenta con la edición del libro y lugar de publicación se hace lo siguiente:  Autor(es). (año). título del libro.(página).(Edición).Lugar de publicación:Editorial</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1439,8 +1440,8 @@ Autor(es).(año).Título del trabajo.(página) Editorial.  Si se cuenta con 
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaU-ns-ZFV">
                                                     <rect key="frame" x="16" y="43" width="306" height="312"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <mutableString key="text">Los campos obligatorios son los siguientes: 
-(Autor del libro). (año). Título del capítulo. En (Autor del capítulo) (Ed.), Título del libro (pp. xx-xx). Editorial.  Si se cuenta con la edición del libro y lugar de publicación se hace lo siguiente:  Autor(es) del libro. (año). Título del capítulo. En (Autor del capítulo) (Ed.), Título del libro (pp. xx-xx).(Edición).Lugar de publicación:Editorial</mutableString>
+                                                    <string key="text">Los campos obligatorios son los siguientes: 
+(Autor del libro). (año). Título del capítulo. En (Autor del capítulo) (Ed.), Título del libro (pp. xx-xx). Editorial.  Si se cuenta con la edición del libro y lugar de publicación se hace lo siguiente:  Autor(es) del libro. (año). Título del capítulo. En (Autor del capítulo) (Ed.), Título del libro (pp. xx-xx).(Edición).Lugar de publicación:Editorial</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
