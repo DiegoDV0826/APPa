@@ -9,10 +9,10 @@ import UIKit
 
 class CollectionViewCell2: UICollectionViewCell {
     
-    @IBOutlet private weak var infoLbl: UILabel!
+    @IBOutlet var infoLbl: UILabel!
     
     func configure(with information: String){
-        infoLbl.text = information
+        self.infoLbl.text = information
     }
     
 }

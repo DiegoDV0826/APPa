@@ -13,11 +13,16 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
 
     var audioPlayer: AVAudioPlayer?
     var info: [String] = ["Renteria Salazar, P.", "Bogotá, Colombia", "Renovacion Urbana", "2006", "El comienzo de la renovación", "Ed."]
-    var info2: [String] = ["Nombre del autor", "Lugar de publicacion", "Editorial", "Año", "Titulo", "Edicion"]
+    var info2: [String] = []
     var source : IndexPath = []
+    var indexDelete : IndexPath = []
+    var beginningPosition: CGPoint = .zero
+    var initialMovableViewPosition: CGPoint = .zero
     
     @IBOutlet weak var firstCollectionView: UICollectionView!
     @IBOutlet weak var secondCollectionView: UICollectionView!
+    @IBOutlet weak var delete: UIButton!
+    
     
     
     override func viewDidLoad() {
@@ -31,6 +36,18 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
         self.secondCollectionView.dropDelegate = self
         self.secondCollectionView.dragInteractionEnabled = true
         self.secondCollectionView.reorderingCadence = .fast
+        
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+            let width = UIScreen.main.bounds.width
+            layout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+            layout.itemSize = CGSize(width: width / 2, height: width / 2)
+            layout.minimumInteritemSpacing = 0
+            layout.minimumLineSpacing = 0
+            secondCollectionView!.collectionViewLayout = layout
+        
+        delete.isHidden = true
+        let gestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(touched(_:)))
+        secondCollectionView.addGestureRecognizer(gestureRecognizer)
 
     }
     
@@ -47,7 +64,7 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
     
     
     @IBAction func Info(_ sender: UIButton) {
-        let alerta = UIAlertController(title: "Información", message: "Debes ubicar los campos en el orden correcto", preferredStyle: .alert)
+        let alerta = UIAlertController(title: "Información", message: "Debes ubicar los campos en el bloque superior en el orden correcto", preferredStyle: .alert)
 
         let accion = UIAlertAction(title: "Entendido", style: .cancel, handler: nil)
         
@@ -77,7 +94,11 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
         }
         else {
             let size = info2[indexPath.row].count
-            let wid = size * 8 + 12
+            if size < 6 {
+                let wid = size * 8 + 8
+                return CGSize(width: wid, height: 30)
+            }
+            let wid = size * 7 + 8
             return CGSize(width: wid, height: 30)
         }
     }
@@ -101,12 +122,9 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
         }
         else {
             let cell2 = secondCollectionView.dequeueReusableCell(withReuseIdentifier: "cell2", for: indexPath) as! CollectionViewCell2
-            //cell2.backgroundColor = UIColor(red: 205/255, green: 205/255, blue: 205/255, alpha: 1)
-            cell2.backgroundColor = UIColor.white
-            cell2.layer.borderColor = UIColor.gray.cgColor
-            cell2.layer.borderWidth = 1
-            cell2.layer.cornerRadius = 5
+            cell2.backgroundColor = UIColor(white: 1, alpha: 0)
             cell2.configure(with: info2[indexPath.row])
+            cell2.infoLbl.textColor = UIColor.black
             return cell2
         }
     }
@@ -151,8 +169,6 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
                 if collectionView === self.secondCollectionView
                 {
                     self.info2.insert(item.dragItem.localObject as! String, at: indexPath.row)
-                    info.remove(at: source.row)
-                    firstCollectionView.deleteItems(at: [source])
                 }
                 else
                 {
@@ -176,15 +192,6 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
         return [dragItem]
     }
     
-    func collectionView(_ collectionView: UICollectionView, itemsForAddingTo session: UIDragSession, at indexPath: IndexPath, point: CGPoint) -> [UIDragItem]
-    {
-        let item = collectionView == firstCollectionView ? self.info[indexPath.row] : self.info2[indexPath.row]
-        let itemProvider = NSItemProvider(object: item as NSString)
-        let dragItem = UIDragItem(itemProvider: itemProvider)
-        dragItem.localObject = item
-        return [dragItem]
-    }
-    
     func collectionView(_ collectionView: UICollectionView, canHandle session: UIDropSession) -> Bool
     {
         return session.canLoadObjects(ofClass: NSString.self)
@@ -196,11 +203,11 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
         {
             if collectionView.hasActiveDrag
             {
-                return UICollectionViewDropProposal(operation: .move, intent: .insertAtDestinationIndexPath)
+                return UICollectionViewDropProposal(operation: .forbidden)
             }
             else
             {
-                return UICollectionViewDropProposal(operation: .copy, intent: .insertAtDestinationIndexPath)
+                return UICollectionViewDropProposal(operation: .forbidden)
             }
         }
         else
@@ -244,6 +251,25 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
             return
         }
     }
+
+    @objc func touched(_ gestureRecognizer: UIGestureRecognizer) {
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == secondCollectionView {
+            delete.isHidden = false
+            indexDelete = indexPath
+        }
+    }
+    
+    @IBAction func deleteItem(_ sender: UIButton) {
+        info2.remove(at: indexDelete.row)
+        secondCollectionView.deleteItems(at: [indexDelete])
+        delete.isHidden = true
+    }
+    
+    
     
     
 }
