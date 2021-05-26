@@ -13,7 +13,7 @@ class AutorViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        preferredContentSize = CGSize(width: 375, height: 280)
+        preferredContentSize = CGSize(width: 375, height: 350)
     }
     
 
