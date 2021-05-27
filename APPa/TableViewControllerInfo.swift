@@ -126,4 +126,8 @@ class TableViewControllerInfo: UITableViewController {
     @IBAction func ejemplosBtn(_ sender: Any) {
         UIApplication.shared.open(URL(string: "https://normas-apa.org/referencias/citar-libro/#ejemplos")! as URL, options: [:], completionHandler: nil)
     }
+    @IBAction func autorCorpBtn(_ sender: Any) {
+        
+        UIApplication.shared.open(URL(string: "https://normas-apa.org/citas/#instituciones-fundaciones-organizaciones")! as URL, options: [:], completionHandler: nil)
+    }
 }
