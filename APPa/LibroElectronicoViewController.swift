@@ -40,6 +40,9 @@ class LibroElectronicoViewController: UIViewController, UIPopoverPresentationCon
         editorial = tfEditorial.text!
         ano = tfAno.text!
         titulo = tfTitulo.text!
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(quitarTeclado))
+        view.addGestureRecognizer(tap)
     }
     
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
@@ -175,6 +178,10 @@ class LibroElectronicoViewController: UIViewController, UIPopoverPresentationCon
     
     override var shouldAutorotate: Bool {
             return false
+    }
+    
+    @IBAction func quitarTeclado(){
+        view.endEditing(true)
     }
 }
 

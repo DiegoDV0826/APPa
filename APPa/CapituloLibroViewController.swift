@@ -56,6 +56,9 @@ class CapituloLibroViewController: UIViewController, UIPopoverPresentationContro
         autorcapitulo = tfAutorCapitulo.text!
         titulocapitulo = tfTituloCapitulo.text!
         pagina = tfPagina.text!
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(quitarTeclado))
+        view.addGestureRecognizer(tap)
     }
     
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
@@ -225,5 +228,9 @@ class CapituloLibroViewController: UIViewController, UIPopoverPresentationContro
     
     override var shouldAutorotate: Bool {
             return false
+    }
+    
+    @IBAction func quitarTeclado(){
+        view.endEditing(true)
     }
 }
