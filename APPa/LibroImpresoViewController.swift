@@ -72,6 +72,20 @@ class LibroImpresoViewController: UIViewController, UIPopoverPresentationControl
         }else if segue.identifier == "edicion"{
             let vistaPopOver = segue.destination as! EdicionViewController
             vistaPopOver.popoverPresentationController!.delegate = self
+        }else if segue.identifier == "drag"{
+            let vistaDrag = segue.destination as! ViewControllerPaginaWeb
+            var arrAux: [String] = []
+            arrAux.append(tfNombre.text!)
+            arrAux.append("(" + tfAno.text! + ").")
+            arrAux.append(tfTitulo.text! + ".")
+            if tfEdicion.text != "" {
+                arrAux.append("(" + tfEdicion.text! + ").")
+            }
+            if tfLugar.text != "" {
+                arrAux.append(tfLugar.text! + ": ")
+            }
+            arrAux.append(tfEditorial.text! + ".")
+            vistaDrag.correctInfo = arrAux
         }
         
     }
@@ -153,8 +167,8 @@ class LibroImpresoViewController: UIViewController, UIPopoverPresentationControl
             bEditorial = true
         }
         if ano == "" {
-            tfAno.backgroundColor = UIColor.green.withAlphaComponent(0.35)
-            bAno = true
+            tfAno.backgroundColor = UIColor.red.withAlphaComponent(0.35)
+            bAno = false
         } else {
             tfAno.backgroundColor = UIColor.green.withAlphaComponent(0.35)
             bAno = true
@@ -168,11 +182,11 @@ class LibroImpresoViewController: UIViewController, UIPopoverPresentationControl
             bTitulo = true
         }
         if edicion == "" {
-            tfEdicion.backgroundColor = UIColor.red.withAlphaComponent(0.35)
-            bEdicion = false
-        } else {
             tfEdicion.backgroundColor = UIColor.green.withAlphaComponent(0.35)
             bEdicion = true
+        } else {
+            tfEdicion.backgroundColor = UIColor.red.withAlphaComponent(0.35)
+            bEdicion = false
         }
         
         if(bNombre == true && bLugar == true && bEditorial == true && bAno == true && bTitulo == true && bEdicion == true){

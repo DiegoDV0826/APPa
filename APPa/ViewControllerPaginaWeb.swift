@@ -16,8 +16,8 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
     
     var info: [String] = []
     var info2: [String] = []
-    var correctInfo: [String] = ["Renteria Salazar, P.", "Bogotá, Colombia", "Renovacion Urbana", "2006", "El comienzo de la renovación", "Ed."]
-        var correct: Bool = false
+    var correctInfo: [String] = []
+    var correct: Bool = false
 
     
     
@@ -303,6 +303,7 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
                 }
             }
             if correct {
+                secondCollectionView.backgroundColor = UIColor.green.withAlphaComponent(0.35)
                 delete.isHidden = true
                 referencia.isHidden = false
                 referencia.text = ref

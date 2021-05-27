@@ -653,7 +653,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnContinuar:" destination="5qV-cg-KoN" eventType="touchUpInside" id="ZmJ-HH-t2A"/>
-                                    <segue destination="djj-iS-f5e" kind="show" id="A1k-jO-4ig"/>
+                                    <segue destination="djj-iS-f5e" kind="show" identifier="drag" id="A1k-jO-4ig"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre del autor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWB-JX-rYU">
@@ -2603,12 +2603,12 @@ Sanchez, C.(27 de enero de 2020), Citar Libro - Referencia Bibliografica, Normas
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="37r-Wy-1T5"/>
-        <segue reference="mYN-4n-RSO"/>
-        <segue reference="eEP-kT-zbo"/>
-        <segue reference="OVm-jK-KF7"/>
-        <segue reference="ZPI-QQ-qkd"/>
-        <segue reference="Fkh-if-Lrw"/>
-        <segue reference="HZV-ul-XHT"/>
+        <segue reference="Yzb-7U-uDx"/>
+        <segue reference="sWe-gd-Pqw"/>
+        <segue reference="7Sd-H2-goN"/>
+        <segue reference="l7H-ei-5Aq"/>
+        <segue reference="Hfk-9F-7dE"/>
+        <segue reference="tXw-sW-c0T"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="book.closed.fill" catalog="system" width="115" height="128"/>
