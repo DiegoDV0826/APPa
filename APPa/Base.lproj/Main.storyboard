@@ -1546,6 +1546,13 @@ Autor(es).(año).Título del trabajo.(página) Editorial.  Si se cuenta con 
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Referencias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vf-de-Sbr">
+                                <rect key="frame" x="60" y="420" width="144" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R2W-Kq-EAN">
                                 <rect key="frame" x="228" y="301" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1567,6 +1574,13 @@ Autor(es).(año).Título del trabajo.(página) Editorial.  Si se cuenta con 
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dY-1U-1f6">
+                                <rect key="frame" x="241" y="426" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="KDR-sy-VGU" kind="presentation" id="BId-jC-gfi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zgh-Rm-5cq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1580,6 +1594,42 @@ Autor(es).(año).Título del trabajo.(página) Editorial.  Si se cuenta con 
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRu-9d-vmw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="60" y="706.59670164917543"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QdA-FZ-u63">
+            <objects>
+                <viewController id="KDR-sy-VGU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BHz-2S-1bb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Referencias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3H-b5-PsG">
+                                <rect key="frame" x="121" y="55" width="133" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJd-yl-wIq">
+                                <rect key="frame" x="16" y="135" width="343" height="376"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Sanchez, C.(05 de febrero de 2020), Referencias APA, Normas APA actualizadas(7ª Edición) de https://normas-apa.org/referencias/.
+
+Sanchez, C.(11 de septiembre de 2019), Orden de la Lista de Referencias, Normas APA actualizadas(7ª Edición) de https://normas-apa.org/referencias/orden-de-la-lista-de-referencias/
+
+Sanchez, C.(27 de enero de 2020), Citar Libro - Referencia Bibliografica, Normas APA actualizadas(7ª Edición) de https://normas-apa.org/referencias/citar-libro/</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a4S-Lu-lCI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oNu-kh-54l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941.60000000000002" y="706.59670164917543"/>
         </scene>
         <!--Titulo View Controller-->
         <scene sceneID="Rw1-0B-YA8">
