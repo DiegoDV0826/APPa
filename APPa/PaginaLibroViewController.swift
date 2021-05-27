@@ -199,5 +199,12 @@ class PaginaLibroViewController: UIViewController, UIPopoverPresentationControll
             present(alerta, animated: true, completion: nil)
         }
     }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return UIInterfaceOrientationMask.landscape
+    }
+    
+    override var shouldAutorotate: Bool {
+            return false
+    }
 }
 

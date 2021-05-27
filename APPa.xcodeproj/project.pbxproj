@@ -12,6 +12,7 @@
 		4777F63A264DD7980072C431 /* TableViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4777F639264DD7980072C431 /* TableViewControllerInfo.swift */; };
 		47BDB9802630D56000E33BDB /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BDB97F2630D56000E33BDB /* ConfigurationViewController.swift */; };
 		D380754526311FBC000EA355 /* ViewControllerPaginaWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D380754426311FBC000EA355 /* ViewControllerPaginaWeb.swift */; };
+		D3C05BF4265F5C1B0045419F /* ReferenciasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C05BF3265F5C1B0045419F /* ReferenciasViewController.swift */; };
 		D3E2AF1F264E5B20009534F6 /* button.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3E2AF1E264E5B20009534F6 /* button.mp3 */; };
 		D3E2AF21264E6045009534F6 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E2AF20264E6045009534F6 /* InfoViewController.swift */; };
 		D3E2AF23264E6147009534F6 /* switch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3E2AF22264E6147009534F6 /* switch.mp3 */; };
@@ -43,6 +44,7 @@
 		4777F639264DD7980072C431 /* TableViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerInfo.swift; sourceTree = "<group>"; };
 		47BDB97F2630D56000E33BDB /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		D380754426311FBC000EA355 /* ViewControllerPaginaWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPaginaWeb.swift; sourceTree = "<group>"; };
+		D3C05BF3265F5C1B0045419F /* ReferenciasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenciasViewController.swift; sourceTree = "<group>"; };
 		D3E2AF1E264E5B20009534F6 /* button.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = button.mp3; sourceTree = "<group>"; };
 		D3E2AF20264E6045009534F6 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		D3E2AF22264E6147009534F6 /* switch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = switch.mp3; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				F21B31BC2650648E00B77615 /* CapituloLibroViewController.swift */,
 				D380754426311FBC000EA355 /* ViewControllerPaginaWeb.swift */,
 				47BDB97F2630D56000E33BDB /* ConfigurationViewController.swift */,
+				D3C05BF3265F5C1B0045419F /* ReferenciasViewController.swift */,
 				F222A390262CCDDB00A6967F /* Assets.xcassets */,
 				F222A392262CCDDB00A6967F /* LaunchScreen.storyboard */,
 				F222A395262CCDDB00A6967F /* Info.plist */,
@@ -221,6 +224,7 @@
 				F220B98A264DFE7000BA5929 /* AutorViewController.swift in Sources */,
 				F222A38C262CCDD800A6967F /* ViewController.swift in Sources */,
 				F220B98E264E10D200BA5929 /* LugarViewController.swift in Sources */,
+				D3C05BF4265F5C1B0045419F /* ReferenciasViewController.swift in Sources */,
 				F21B31C026506ABC00B77615 /* URLViewController.swift in Sources */,
 				F21B31C62650947800B77615 /* PaginaViewController.swift in Sources */,
 				4777F63A264DD7980072C431 /* TableViewControllerInfo.swift in Sources */,

@@ -1,19 +1,18 @@
 //
-//  EdicionViewController.swift
+//  ReferenciasViewController.swift
 //  APPa
 //
-//  Created by user189869 on 5/14/21.
+//  Created by Omar Balboa on 26/05/21.
 //
 
 import UIKit
 
-class EdicionViewController: UIViewController {
+class ReferenciasViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        preferredContentSize = CGSize(width: 200, height: 150)
     }
     
 
@@ -26,6 +25,7 @@ class EdicionViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return UIInterfaceOrientationMask.landscape
     }
     

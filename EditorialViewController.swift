@@ -28,4 +28,10 @@ class EditorialViewController: UIViewController {
     }
     */
 
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return UIInterfaceOrientationMask.landscape
+    }
+    
+    override var shouldAutorotate: Bool {
+            return false
+    }
 }

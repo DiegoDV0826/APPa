@@ -26,5 +26,10 @@ class TituloViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return UIInterfaceOrientationMask.landscape
+    }
+    
+    override var shouldAutorotate: Bool {
+            return false
+    }
 }

@@ -130,4 +130,11 @@ class TableViewControllerInfo: UITableViewController {
         
         UIApplication.shared.open(URL(string: "https://normas-apa.org/citas/#instituciones-fundaciones-organizaciones")! as URL, options: [:], completionHandler: nil)
     }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return UIInterfaceOrientationMask.landscape
+    }
+    
+    override var shouldAutorotate: Bool {
+            return false
+    }
 }
