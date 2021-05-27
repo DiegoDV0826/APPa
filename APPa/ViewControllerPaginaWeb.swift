@@ -12,17 +12,22 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
     
 
     var audioPlayer: AVAudioPlayer?
-    var info: [String] = ["Renteria Salazar, P.", "Bogotá, Colombia", "Renovacion Urbana", "2006", "El comienzo de la renovación", "Ed."]
+    
+    
+    var info: [String] = []
     var info2: [String] = []
+    var correctInfo: [String] = ["Renteria Salazar, P.", "Bogotá, Colombia", "Renovacion Urbana", "2006", "El comienzo de la renovación", "Ed."]
+        var correct: Bool = false
+
+    
+    
     var source : IndexPath = []
     var indexDelete : IndexPath = []
-    var beginningPosition: CGPoint = .zero
-    var initialMovableViewPosition: CGPoint = .zero
     
     @IBOutlet weak var firstCollectionView: UICollectionView!
     @IBOutlet weak var secondCollectionView: UICollectionView!
     @IBOutlet weak var delete: UIButton!
-    
+    @IBOutlet weak var referencia: UILabel!
     
     
     override func viewDidLoad() {
@@ -46,11 +51,20 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
             secondCollectionView!.collectionViewLayout = layout
         
         delete.isHidden = true
-        let gestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(touched(_:)))
-        secondCollectionView.addGestureRecognizer(gestureRecognizer)
+        referencia.isHidden = true
+        loadData()
 
     }
     
+    func loadData(){
+        let num = correctInfo.count - 1
+        var numbers = Array(0...num)
+        numbers.shuffle()
+        for item in numbers {
+            info.append(correctInfo[item])
+        }
+    }
+
 
     /*
     // MARK: - Navigation
@@ -155,6 +169,7 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
                 collectionView.insertItems(at: [dIndexPath])
             })
             coordinator.drop(items.first!.dragItem, toItemAt: dIndexPath)
+            isCorrect()
         }
     }
     
@@ -179,6 +194,7 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
                 indexPaths.append(indexPath)
             }
             collectionView.insertItems(at: indexPaths)
+            isCorrect()
         })
     }
     
@@ -251,10 +267,6 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
             return
         }
     }
-
-    @objc func touched(_ gestureRecognizer: UIGestureRecognizer) {
-        
-    }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == secondCollectionView {
@@ -267,6 +279,25 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
         info2.remove(at: indexDelete.row)
         secondCollectionView.deleteItems(at: [indexDelete])
         delete.isHidden = true
+        isCorrect()
+    }
+    
+    func isCorrect(){
+        correct = true
+        var ref: String = "Referencia final: "
+        if info2.count == correctInfo.count {
+            for i in 0..<correctInfo.count {
+                ref = ref + info2[i] + " "
+                if correctInfo[i] != info2[i] {
+                    correct = false
+                }
+            }
+            if correct {
+                delete.isHidden = true
+                referencia.isHidden = false
+                referencia.text = ref
+            }
+        }
     }
     
     
