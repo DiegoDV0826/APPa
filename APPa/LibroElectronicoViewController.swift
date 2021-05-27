@@ -10,12 +10,36 @@ import AVFoundation
 
 class LibroElectronicoViewController: UIViewController, UIPopoverPresentationControllerDelegate {
 
+    @IBOutlet weak var tfNombre: UITextField!
+    @IBOutlet weak var tfDOI: UITextField!
+    @IBOutlet weak var tfTitulo: UITextField!
+    @IBOutlet weak var tfAno: UITextField!
+    @IBOutlet weak var tfEditorial: UITextField!
+    
+    var nombre : String = ""
+    var DOI : String = ""
+    var editorial : String = ""
+    var ano : String = ""
+    var titulo : String = ""
+    
+    var bNombre : Bool = false
+    var bDOI : Bool = false
+    var bEditorial : Bool = false
+    var bAno : Bool = false
+    var bTitulo : Bool = false
+    var bTodos : Bool = false
+    
     var audioPlayer: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        nombre = tfNombre.text!
+        DOI = tfDOI.text!
+        editorial = tfEditorial.text!
+        ano = tfAno.text!
+        titulo = tfTitulo.text!
     }
     
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
@@ -80,5 +104,70 @@ class LibroElectronicoViewController: UIViewController, UIPopoverPresentationCon
             }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        tfNombre.backgroundColor = UIColor.white
+        tfDOI.backgroundColor = UIColor.white
+        tfEditorial.backgroundColor = UIColor.white
+        tfAno.backgroundColor = UIColor.white
+        tfTitulo.backgroundColor = UIColor.white
+    }
+    
+    @IBAction func btnContinuar(_ sender: UIButton) {
+        nombre = tfNombre.text!
+        DOI = tfDOI.text!
+        editorial = tfEditorial.text!
+        ano = tfAno.text!
+        titulo = tfTitulo.text!
+        
+        if nombre == "" {
+            tfNombre.backgroundColor = UIColor.red.withAlphaComponent(0.35)
+            bNombre = false
+        } else {
+            tfNombre.backgroundColor = UIColor.green.withAlphaComponent(0.35)
+            bNombre = true
+        }
+        if DOI == "" {
+            tfDOI.backgroundColor = UIColor.red.withAlphaComponent(0.35)
+            bDOI = false
+        } else {
+            tfDOI.backgroundColor = UIColor.green.withAlphaComponent(0.35)
+            bDOI = true
+        }
+        if editorial == "" {
+            tfEditorial.backgroundColor = UIColor.red.withAlphaComponent(0.35)
+            bEditorial = false
+        } else {
+            tfEditorial.backgroundColor = UIColor.green.withAlphaComponent(0.35)
+            bEditorial = true
+        }
+        if ano == "" {
+            tfAno.backgroundColor = UIColor.green.withAlphaComponent(0.35)
+            bAno = true
+        } else {
+            tfAno.backgroundColor = UIColor.green.withAlphaComponent(0.35)
+            bAno = true
+        }
+        if titulo == "" {
+            tfTitulo.backgroundColor = UIColor.red.withAlphaComponent(0.35)
+            bTitulo = false
+            
+        } else {
+            tfTitulo.backgroundColor = UIColor.green.withAlphaComponent(0.35)
+            bTitulo = true
+        }
+        
+        if(bNombre == true && bDOI == true && bEditorial == true && bAno == true && bTitulo == true){
+            bTodos = true
+        } else {
+            bTodos = false
+            let alerta = UIAlertController(title: "Incorrecto", message: "Debes llenar los campos marcados con rojo de forma correcta", preferredStyle: .alert)
+
+            let accion = UIAlertAction(title: "Entendido", style: .cancel, handler: nil)
+            
+            alerta.addAction(accion)
+            
+            present(alerta, animated: true, completion: nil)
+        }
+    }
 }
 

@@ -1687,6 +1687,9 @@ Autor(es).(año).Título del trabajo.(página) Editorial.  Si se cuenta con 
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnContinuar:" destination="eiV-Dt-sc5" eventType="touchUpInside" id="2FX-NE-Lrc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre del autor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ao-OC-hSu">
                                 <rect key="frame" x="42" y="188" width="138" height="21"/>
@@ -1810,6 +1813,13 @@ Autor(es).(año).Título del trabajo.(página) Editorial.  Si se cuenta con 
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="46Y-vN-SL3"/>
+                    <connections>
+                        <outlet property="tfAno" destination="HXF-YD-i3r" id="8Zy-bO-t6x"/>
+                        <outlet property="tfDOI" destination="iU7-D6-EKH" id="HX2-po-0Sx"/>
+                        <outlet property="tfEditorial" destination="C0E-jH-06s" id="cVS-mz-VzZ"/>
+                        <outlet property="tfNombre" destination="ObJ-5k-1ok" id="su7-LV-GU3"/>
+                        <outlet property="tfTitulo" destination="luI-mj-jQE" id="4Zm-ct-iny"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3F-jm-s7I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1843,6 +1853,9 @@ Autor(es).(año).Título del trabajo.(página) Editorial.  Si se cuenta con 
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnContinuar:" destination="PUN-gy-CYS" eventType="touchUpInside" id="XHz-rc-P5b"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre del autor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xik-l8-7jp">
                                 <rect key="frame" x="42" y="188" width="138" height="21"/>
@@ -1988,6 +2001,14 @@ Autor(es).(año).Título del trabajo.(página) Editorial.  Si se cuenta con 
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="09b-te-mCw"/>
+                    <connections>
+                        <outlet property="tfAno" destination="78P-l3-p52" id="PYQ-wp-mNy"/>
+                        <outlet property="tfEdicion" destination="6vO-nc-tQZ" id="O1i-m9-QP0"/>
+                        <outlet property="tfEditorial" destination="JfI-zi-WcD" id="yDE-wT-H3U"/>
+                        <outlet property="tfLugar" destination="cma-xo-01I" id="0QF-n4-OlA"/>
+                        <outlet property="tfNombre" destination="U8u-gW-mjV" id="Evz-6j-VcJ"/>
+                        <outlet property="tfTitulo" destination="02A-rV-MFd" id="DUV-oW-MgY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AwH-Ts-aaO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2021,6 +2042,9 @@ Autor(es).(año).Título del trabajo.(página) Editorial.  Si se cuenta con 
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnContinuar:" destination="Bx1-VF-BaV" eventType="touchUpInside" id="EOm-yJ-Uvj"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre del autor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KY-ka-OJy">
                                 <rect key="frame" x="42" y="188" width="138" height="21"/>
@@ -2188,6 +2212,15 @@ Autor(es).(año).Título del trabajo.(página) Editorial.  Si se cuenta con 
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qo4-G0-BWu"/>
+                    <connections>
+                        <outlet property="tfAno" destination="1Ky-p2-BC3" id="HdL-nv-GDN"/>
+                        <outlet property="tfEdicion" destination="ALL-vU-Aeo" id="7sh-di-Mdc"/>
+                        <outlet property="tfEditorial" destination="PjP-Do-UPc" id="IBZ-4n-LZ7"/>
+                        <outlet property="tfLugar" destination="1XW-qf-xWk" id="71w-dI-nP6"/>
+                        <outlet property="tfNombre" destination="j3m-9X-1Dt" id="Sjd-wu-ctl"/>
+                        <outlet property="tfPagina" destination="ZOb-Zk-Vee" id="w8t-uK-4PL"/>
+                        <outlet property="tfTitulo" destination="xyT-G3-dtQ" id="JLH-7d-64n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mPz-EG-AZu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2239,10 +2272,10 @@ Autor(es).(año).Título del trabajo.(página) Editorial.  Si se cuenta con 
             </objects>
             <point key="canvasLocation" x="-388" y="1494.1529235382311"/>
         </scene>
-        <!--Pagina Libro View Controller-->
+        <!--Capitulo Libro View Controller-->
         <scene sceneID="fYA-rQ-bD7">
             <objects>
-                <viewController id="bBs-bk-Rlj" customClass="PaginaLibroViewController" customModule="APPa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bBs-bk-Rlj" customClass="CapituloLibroViewController" customModule="APPa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rSA-xu-mNQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2267,6 +2300,9 @@ Autor(es).(año).Título del trabajo.(página) Editorial.  Si se cuenta con 
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnContinuar:" destination="bBs-bk-Rlj" eventType="touchUpInside" id="6pr-ws-22V"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lugar de publicación:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmD-yc-A7w">
                                 <rect key="frame" x="42" y="226" width="164" height="21"/>
@@ -2478,6 +2514,17 @@ Autor(es).(año).Título del trabajo.(página) Editorial.  Si se cuenta con 
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="1q9-3l-8bn"/>
+                    <connections>
+                        <outlet property="tfAno" destination="Uxx-Oj-QWM" id="m6g-Fw-xK4"/>
+                        <outlet property="tfAutor" destination="gU7-06-NPB" id="DUp-N8-z14"/>
+                        <outlet property="tfAutorCapitulo" destination="h0t-Nh-OjU" id="N8y-Sd-Eou"/>
+                        <outlet property="tfEdicion" destination="YoQ-3o-Ch8" id="6z0-Oc-76Q"/>
+                        <outlet property="tfEditorial" destination="tSR-33-e0c" id="Hq2-kl-YSv"/>
+                        <outlet property="tfLugar" destination="Hgb-Ud-mwy" id="UbS-1M-77G"/>
+                        <outlet property="tfPagina" destination="TSu-Vk-Mmy" id="Cqb-3j-ubD"/>
+                        <outlet property="tfTituloCapitulo" destination="rsp-N9-kn0" id="4qR-mH-kN0"/>
+                        <outlet property="tfTituloLibro" destination="hEl-PT-hyI" id="c4b-3F-Avx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V1O-lt-Q6E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2486,12 +2533,12 @@ Autor(es).(año).Título del trabajo.(página) Editorial.  Si se cuenta con 
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="7DB-8a-C8C"/>
-        <segue reference="Yzb-7U-uDx"/>
-        <segue reference="sWe-gd-Pqw"/>
-        <segue reference="7Sd-H2-goN"/>
-        <segue reference="l7H-ei-5Aq"/>
-        <segue reference="Hfk-9F-7dE"/>
-        <segue reference="tXw-sW-c0T"/>
+        <segue reference="6iN-qa-2tW"/>
+        <segue reference="lgJ-Bt-vJ4"/>
+        <segue reference="8qr-G0-rmv"/>
+        <segue reference="tDr-Pn-jbh"/>
+        <segue reference="iwv-vU-qpK"/>
+        <segue reference="IFk-Py-dyI"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="book.closed.fill" catalog="system" width="115" height="128"/>

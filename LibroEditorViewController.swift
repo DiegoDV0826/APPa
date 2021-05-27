@@ -11,12 +11,40 @@ import AVFoundation
 
 class LibroEditorViewController: UIViewController, UIPopoverPresentationControllerDelegate {
 
+    @IBOutlet weak var tfNombre: UITextField!
+    @IBOutlet weak var tfLugar: UITextField!
+    @IBOutlet weak var tfEditorial: UITextField!
+    @IBOutlet weak var tfAno: UITextField!
+    @IBOutlet weak var tfTitulo: UITextField!
+    @IBOutlet weak var tfEdicion: UITextField!
+    
+    var nombre : String = ""
+    var lugar : String = ""
+    var editorial : String = ""
+    var ano : String = ""
+    var titulo : String = ""
+    var edicion : String = ""
+    
+    var bNombre : Bool = false
+    var bLugar : Bool = false
+    var bEditorial : Bool = false
+    var bAno : Bool = false
+    var bTitulo : Bool = false
+    var bEdicion : Bool = false
+    var bTodos : Bool = false
+    
     var audioPlayer: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        nombre = tfNombre.text!
+        lugar = tfLugar.text!
+        editorial = tfEditorial.text!
+        ano = tfAno.text!
+        titulo = tfTitulo.text!
+        edicion = tfEdicion.text!
     }
     
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
@@ -84,6 +112,81 @@ class LibroEditorViewController: UIViewController, UIPopoverPresentationControll
             } catch {
                 
             }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tfNombre.backgroundColor = UIColor.white
+        tfLugar.backgroundColor = UIColor.white
+        tfEditorial.backgroundColor = UIColor.white
+        tfAno.backgroundColor = UIColor.white
+        tfTitulo.backgroundColor = UIColor.white
+        tfEdicion.backgroundColor = UIColor.white
+    }
+    
+    @IBAction func btnContinuar(_ sender: UIButton) {
+        nombre = tfNombre.text!
+        lugar = tfLugar.text!
+        editorial = tfEditorial.text!
+        ano = tfAno.text!
+        titulo = tfTitulo.text!
+        edicion = tfEdicion.text!
+        
+        if nombre == "" {
+            tfNombre.backgroundColor = UIColor.red.withAlphaComponent(0.35)
+            bNombre = false
+        } else {
+            tfNombre.backgroundColor = UIColor.green.withAlphaComponent(0.35)
+            bNombre = true
+        }
+        if lugar == "" {
+            tfLugar.backgroundColor = UIColor.green.withAlphaComponent(0.35)
+            bLugar = true
+        } else {
+            tfLugar.backgroundColor = UIColor.green.withAlphaComponent(0.35)
+            bLugar = true
+        }
+        if editorial == "" {
+            tfEditorial.backgroundColor = UIColor.red.withAlphaComponent(0.35)
+            bEditorial = false
+        } else {
+            tfEditorial.backgroundColor = UIColor.green.withAlphaComponent(0.35)
+            bEditorial = true
+        }
+        if ano == "" {
+            tfAno.backgroundColor = UIColor.green.withAlphaComponent(0.35)
+            bAno = true
+        } else {
+            tfAno.backgroundColor = UIColor.green.withAlphaComponent(0.35)
+            bAno = true
+        }
+        if titulo == "" {
+            tfTitulo.backgroundColor = UIColor.red.withAlphaComponent(0.35)
+            bTitulo = false
+            
+        } else {
+            tfTitulo.backgroundColor = UIColor.green.withAlphaComponent(0.35)
+            bTitulo = true
+        }
+        if edicion == "" {
+            tfEdicion.backgroundColor = UIColor.red.withAlphaComponent(0.35)
+            bEdicion = false
+        } else {
+            tfEdicion.backgroundColor = UIColor.green.withAlphaComponent(0.35)
+            bEdicion = true
+        }
+        
+        if(bNombre == true && bLugar == true && bEditorial == true && bAno == true && bTitulo == true && bEdicion == true){
+            bTodos = true
+        } else {
+            bTodos = false
+            let alerta = UIAlertController(title: "Incorrecto", message: "Debes llenar los campos marcados con rojo de forma correcta", preferredStyle: .alert)
+
+            let accion = UIAlertAction(title: "Entendido", style: .cancel, handler: nil)
+            
+            alerta.addAction(accion)
+            
+            present(alerta, animated: true, completion: nil)
+        }
     }
     
 }
