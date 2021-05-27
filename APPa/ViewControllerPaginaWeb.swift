@@ -230,11 +230,21 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
         {
             if collectionView.hasActiveDrag
             {
-                return UICollectionViewDropProposal(operation: .move, intent: .insertAtDestinationIndexPath)
+                if referencia.isHidden {
+                    return UICollectionViewDropProposal(operation: .move, intent: .insertAtDestinationIndexPath)
+                }
+                else {
+                    return UICollectionViewDropProposal(operation: .forbidden)
+                }
             }
             else
             {
-                return UICollectionViewDropProposal(operation: .copy, intent: .insertAtDestinationIndexPath)
+                if referencia.isHidden {
+                    return UICollectionViewDropProposal(operation: .copy, intent: .insertAtDestinationIndexPath)
+                }
+                else {
+                    return UICollectionViewDropProposal(operation: .forbidden)
+                }
             }
         }
     }
