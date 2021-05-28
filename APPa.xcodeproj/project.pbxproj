@@ -36,6 +36,7 @@
 		F279EB4C264ED9F9005424D6 /* AnoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F279EB4B264ED9F9005424D6 /* AnoViewController.swift */; };
 		F279EB4F264EDC29005424D6 /* TituloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F279EB4E264EDC29005424D6 /* TituloViewController.swift */; };
 		F279EB52264EE168005424D6 /* EdicionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F279EB51264EE168005424D6 /* EdicionViewController.swift */; };
+		F2CA061826609D0D003DAD30 /* LogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CA061726609D0D003DAD30 /* LogoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		F279EB4B264ED9F9005424D6 /* AnoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnoViewController.swift; sourceTree = "<group>"; };
 		F279EB4E264EDC29005424D6 /* TituloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TituloViewController.swift; sourceTree = "<group>"; };
 		F279EB51264EE168005424D6 /* EdicionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdicionViewController.swift; sourceTree = "<group>"; };
+		F2CA061726609D0D003DAD30 /* LogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		F222A37B262CCDD800A6967F = {
 			isa = PBXGroup;
 			children = (
+				F2CA061726609D0D003DAD30 /* LogoViewController.swift */,
 				F21B31C52650947800B77615 /* PaginaViewController.swift */,
 				F21B31C226507AA700B77615 /* LibroEditorViewController.swift */,
 				41A46B14264EEF33003F5089 /* CollectionViewCell2.swift */,
@@ -238,6 +241,7 @@
 				F228CA85264DADD3001C6DDA /* QueTeInteresaAprenderViewController.swift in Sources */,
 				F222A388262CCDD800A6967F /* AppDelegate.swift in Sources */,
 				F21B31B6265063E600B77615 /* PaginaLibroViewController.swift in Sources */,
+				F2CA061826609D0D003DAD30 /* LogoViewController.swift in Sources */,
 				F21B31B92650641800B77615 /* LibroImpresoViewController.swift in Sources */,
 				F222A38A262CCDD800A6967F /* SceneDelegate.swift in Sources */,
 			);

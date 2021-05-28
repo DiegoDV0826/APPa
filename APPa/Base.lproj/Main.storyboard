@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r07-gW-9ct">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -83,7 +83,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="button-4"/>
                                 <connections>
-                                    <segue destination="4TY-4o-GDf" kind="presentation" modalPresentationStyle="fullScreen" id="POm-Y1-Bzz"/>
+                                    <segue destination="4TY-4o-GDf" kind="presentation" modalPresentationStyle="fullScreen" id="79d-KJ-ZZX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="APPa te permite aprender a crear fichas de referencia correctas " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6z-PO-bG8">
@@ -111,7 +111,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1751.2" y="-864.01799100449784"/>
+            <point key="canvasLocation" x="-1686" y="-949"/>
+        </scene>
+        <!--Logo View Controller-->
+        <scene sceneID="xCh-mF-gHh">
+            <objects>
+                <viewController id="r07-gW-9ct" customClass="LogoViewController" customModule="APPa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HjY-1I-qpX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="APPa logo" translatesAutoresizingMaskIntoConstraints="NO" id="bV2-me-tLB">
+                                <rect key="frame" x="-5" y="189" width="384" height="288"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mlF-4M-wfe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="logo" modalPresentationStyle="fullScreen" id="CSW-MH-RRJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZe-ic-K9S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2460" y="-948"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="CmV-1z-8FJ">
@@ -131,7 +155,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NkT-LJ-xty" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-858" y="-809"/>
+            <point key="canvasLocation" x="-858" y="-900"/>
         </scene>
         <!--Que Te Interesa Aprender View Controller-->
         <scene sceneID="jGh-d3-GYa">
@@ -2645,6 +2669,7 @@ Sanchez, C.(27 de enero de 2020), Citar Libro - Referencia Bibliografica, Normas
         <segue reference="oro-kA-9Ai"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="APPa logo" width="1076" height="1108"/>
         <image name="book.closed.fill" catalog="system" width="115" height="128"/>
         <image name="button-4" width="265" height="54"/>
         <image name="garbage" width="839" height="1080"/>
