@@ -127,7 +127,7 @@ class CapituloLibroViewController: UIViewController, UIPopoverPresentationContro
     
     
     @IBAction func Info(_ sender: UIButton) {
-        let alerta = UIAlertController(title: "Información", message: "Debes llenar los campos con el formato correcto,en caso de no contar con algun dato, deja el espacio sin llenar. Para ver ejemplos pulsa el boton de informacion de cada campo", preferredStyle: .alert)
+        let alerta = UIAlertController(title: "Información", message: "Debes llenar los campos con el formato correcto,en caso de no contar con algun dato, deja el espacio sin llenar. Para ver ejemplos pulsa el botón de informacion de cada campo", preferredStyle: .alert)
 
         let accion = UIAlertAction(title: "Entendido", style: .cancel, handler: nil)
         
