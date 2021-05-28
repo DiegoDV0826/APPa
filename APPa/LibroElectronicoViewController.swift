@@ -77,7 +77,7 @@ class LibroElectronicoViewController: UIViewController, UIPopoverPresentationCon
             }
             arrAux.append(tfTitulo.text! + ".")
             arrAux.append(tfEditorial.text! + ".")
-            arrAux.append(tfDOI.text!)
+            arrAux.append("Recuperado de " + tfDOI.text!)
             vistaDrag.correctInfo = arrAux
         }
         
