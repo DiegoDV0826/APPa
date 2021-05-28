@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r07-gW-9ct">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r07-gW-9ct">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -14,14 +14,14 @@
             <objects>
                 <navigationController id="eur-Gq-jKi" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Referencias" image="book.closed.fill" catalog="system" id="Xsp-Aj-X7V"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="nZa-L2-f8c">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nZa-L2-f8c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -1657,14 +1657,14 @@ Autor(es).(año).Título del trabajo.(página) Editorial.  Si se cuenta con 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Referencias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3H-b5-PsG">
-                                <rect key="frame" x="121" y="53" width="133" height="29"/>
+                                <rect key="frame" x="121" y="52" width="133" height="29"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJd-yl-wIq">
-                                <rect key="frame" x="16" y="135" width="343" height="374"/>
+                                <rect key="frame" x="16" y="135" width="343" height="373"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <string key="text">Sanchez, C.(05 de febrero de 2020), Referencias APA, Normas APA actualizadas(7ª Edición) de https://normas-apa.org/referencias/.
 
@@ -2667,13 +2667,13 @@ Sanchez, C.(27 de enero de 2020), Citar Libro - Referencia Bibliografica, Normas
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="7DB-8a-C8C"/>
-        <segue reference="6iN-qa-2tW"/>
-        <segue reference="lgJ-Bt-vJ4"/>
+        <segue reference="6MV-Vz-Dq0"/>
+        <segue reference="KDI-HH-hna"/>
         <segue reference="8qr-G0-rmv"/>
-        <segue reference="tDr-Pn-jbh"/>
+        <segue reference="SAK-3J-LW6"/>
         <segue reference="iwv-vU-qpK"/>
-        <segue reference="IFk-Py-dyI"/>
-        <segue reference="Tf4-Tt-70s"/>
+        <segue reference="oro-kA-9Ai"/>
+        <segue reference="jbV-nf-xgK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="APPa logo" width="1076" height="1108"/>
