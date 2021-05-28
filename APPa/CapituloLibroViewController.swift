@@ -84,6 +84,9 @@ class CapituloLibroViewController: UIViewController, UIPopoverPresentationContro
         }else if segue.identifier == "edicion"{
             let vistaPopOver = segue.destination as! EdicionViewController
             vistaPopOver.popoverPresentationController!.delegate = self
+        }else if segue.identifier == "edicion"{
+            let vistaPopOver = segue.destination as! PaginaViewController
+            vistaPopOver.popoverPresentationController!.delegate = self
         }
         
     }

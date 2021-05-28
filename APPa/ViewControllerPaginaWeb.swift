@@ -11,6 +11,7 @@ import AVFoundation
 class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDragDelegate, UICollectionViewDropDelegate  {
     
 
+    
     var audioPlayer: AVAudioPlayer?
     
     
@@ -65,7 +66,16 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
         }
     }
 
+    @IBAction func mostrarInstrucciones(_ sender: Any) {
+        let alerta = UIAlertController(title: "Información", message: "Arrastra los elementos en el orden correcto segun el tipo de referencia elegida", preferredStyle: .alert)
 
+        let accion = UIAlertAction(title: "Entendido", style: .cancel, handler: nil)
+        
+        alerta.addAction(accion)
+        
+        present(alerta, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
