@@ -1792,6 +1792,7 @@ Sanchez, C.(27 de enero de 2020), Citar Libro - Referencia Bibliografica, Normas
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnContinuar:" destination="eiV-Dt-sc5" eventType="touchUpInside" id="2FX-NE-Lrc"/>
+                                    <segue destination="djj-iS-f5e" kind="show" identifier="drag" id="jbV-nf-xgK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre del autor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ao-OC-hSu">
@@ -1963,6 +1964,7 @@ Sanchez, C.(27 de enero de 2020), Citar Libro - Referencia Bibliografica, Normas
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnContinuar:" destination="PUN-gy-CYS" eventType="touchUpInside" id="XHz-rc-P5b"/>
+                                    <segue destination="djj-iS-f5e" kind="show" identifier="drag" id="l8a-Mm-xAl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre del autor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xik-l8-7jp">
@@ -2158,6 +2160,7 @@ Sanchez, C.(27 de enero de 2020), Citar Libro - Referencia Bibliografica, Normas
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnContinuar:" destination="Bx1-VF-BaV" eventType="touchUpInside" id="EOm-yJ-Uvj"/>
+                                    <segue destination="djj-iS-f5e" kind="show" identifier="drag" id="N6r-xZ-9Lj"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre del autor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KY-ka-OJy">
@@ -2423,6 +2426,7 @@ Sanchez, C.(27 de enero de 2020), Citar Libro - Referencia Bibliografica, Normas
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnContinuar:" destination="bBs-bk-Rlj" eventType="touchUpInside" id="6pr-ws-22V"/>
+                                    <segue destination="djj-iS-f5e" kind="show" identifier="drag" id="Tf4-Tt-70s"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lugar de publicación:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmD-yc-A7w">
@@ -2658,17 +2662,18 @@ Sanchez, C.(27 de enero de 2020), Citar Libro - Referencia Bibliografica, Normas
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V1O-lt-Q6E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2383.1999999999998" y="2103.5982008995502"/>
+            <point key="canvasLocation" x="-2521" y="1868"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="7DB-8a-C8C"/>
-        <segue reference="6MV-Vz-Dq0"/>
-        <segue reference="KDI-HH-hna"/>
-        <segue reference="7GQ-cQ-e9z"/>
-        <segue reference="SAK-3J-LW6"/>
-        <segue reference="7zN-5I-gT6"/>
-        <segue reference="oro-kA-9Ai"/>
+        <segue reference="6iN-qa-2tW"/>
+        <segue reference="lgJ-Bt-vJ4"/>
+        <segue reference="8qr-G0-rmv"/>
+        <segue reference="tDr-Pn-jbh"/>
+        <segue reference="iwv-vU-qpK"/>
+        <segue reference="IFk-Py-dyI"/>
+        <segue reference="Tf4-Tt-70s"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="APPa logo" width="1076" height="1108"/>

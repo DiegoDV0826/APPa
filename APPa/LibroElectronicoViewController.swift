@@ -66,6 +66,19 @@ class LibroElectronicoViewController: UIViewController, UIPopoverPresentationCon
         }else if segue.identifier == "titulo"{
             let vistaPopOver = segue.destination as! TituloViewController
             vistaPopOver.popoverPresentationController!.delegate = self
+        }else if segue.identifier == "drag"{
+            let vistaDrag = segue.destination as! ViewControllerPaginaWeb
+            var arrAux: [String] = []
+            arrAux.append(tfNombre.text!)
+            if tfAno.text != ""{
+                arrAux.append("(" + tfAno.text! + ").")
+            }else {
+                arrAux.append("(s.f.).")
+            }
+            arrAux.append(tfTitulo.text! + ".")
+            arrAux.append(tfEditorial.text! + ".")
+            arrAux.append(tfDOI.text!)
+            vistaDrag.correctInfo = arrAux
         }
         
     }

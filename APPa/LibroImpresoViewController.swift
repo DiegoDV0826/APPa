@@ -76,10 +76,17 @@ class LibroImpresoViewController: UIViewController, UIPopoverPresentationControl
             let vistaDrag = segue.destination as! ViewControllerPaginaWeb
             var arrAux: [String] = []
             arrAux.append(tfNombre.text!)
-            arrAux.append("(" + tfAno.text! + ").")
+            if tfAno.text != ""{
+                arrAux.append("(" + tfAno.text! + ").")
+            }else {
+                arrAux.append("(s.f.).")
+            }
             arrAux.append(tfTitulo.text! + ".")
             if tfEdicion.text != "" {
                 arrAux.append("(" + tfEdicion.text! + ").")
+            }
+            else{
+                arrAux.append("(Ed.)" )
             }
             if tfLugar.text != "" {
                 arrAux.append(tfLugar.text! + ": ")

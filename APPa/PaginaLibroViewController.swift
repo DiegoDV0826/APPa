@@ -78,6 +78,28 @@ class PaginaLibroViewController: UIViewController, UIPopoverPresentationControll
         }else if segue.identifier == "pagina"{
             let vistaPopOver = segue.destination as! PaginaViewController
             vistaPopOver.popoverPresentationController!.delegate = self
+        }else if segue.identifier == "drag"{
+            let vistaDrag = segue.destination as! ViewControllerPaginaWeb
+            var arrAux: [String] = []
+            arrAux.append(tfNombre.text!)
+            if tfAno.text != ""{
+                arrAux.append("(" + tfAno.text! + ").")
+            }else {
+                arrAux.append("(s.f.).")
+            }
+            arrAux.append(tfTitulo.text! + ".")
+            arrAux.append("(" + tfPagina.text! + ").")
+            if tfEdicion.text != "" {
+                arrAux.append("(" + tfEdicion.text! + ").")
+            }
+            else{
+                arrAux.append("(Ed.)" )
+            }
+            if tfLugar.text != "" {
+                arrAux.append(tfLugar.text! + ": ")
+            }
+            arrAux.append(tfEditorial.text! + ".")
+            vistaDrag.correctInfo = arrAux
         }
         
     }
