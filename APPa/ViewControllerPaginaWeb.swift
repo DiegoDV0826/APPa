@@ -305,9 +305,11 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
     func isCorrect(){
         correct = true
         var ref: String = "Referencia final: "
+        var aux: String = ""
         if info2.count == correctInfo.count {
             for i in 0..<correctInfo.count {
                 ref = ref + info2[i] + " "
+                aux = aux + info2[i] + " "
                 if correctInfo[i] != info2[i] {
                     correct = false
                 }
@@ -317,6 +319,8 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
                 delete.isHidden = true
                 referencia.isHidden = false
                 referencia.text = ref
+                let pasteboard = UIPasteboard.general
+                pasteboard.string = aux
             }
         }
     }
@@ -329,4 +333,13 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
             return false
     }
     
+    @IBAction func info(_ sender: Any) {
+        let alerta = UIAlertController(title: "Información", message: "Arrastra los items que aparecen en la parte inferior hacia la parte superior para comenzar a crear la referencia. En caso de confundirte, puedes presionar el botón en forma de basurero para comenzar de nuevo", preferredStyle: .alert)
+
+        let accion = UIAlertAction(title: "Entendido", style: .cancel, handler: nil)
+        
+        alerta.addAction(accion)
+        
+        present(alerta, animated: true, completion: nil)
+    }
 }
