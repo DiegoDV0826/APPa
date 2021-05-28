@@ -167,8 +167,8 @@ class LibroImpresoViewController: UIViewController, UIPopoverPresentationControl
             bEditorial = true
         }
         if ano == "" {
-            tfAno.backgroundColor = UIColor.red.withAlphaComponent(0.35)
-            bAno = false
+            tfAno.backgroundColor = UIColor.green.withAlphaComponent(0.35)
+            bAno = true
         } else {
             tfAno.backgroundColor = UIColor.green.withAlphaComponent(0.35)
             bAno = true
@@ -182,11 +182,11 @@ class LibroImpresoViewController: UIViewController, UIPopoverPresentationControl
             bTitulo = true
         }
         if edicion == "" {
-            tfEdicion.backgroundColor = UIColor.green.withAlphaComponent(0.35)
-            bEdicion = true
-        } else {
             tfEdicion.backgroundColor = UIColor.red.withAlphaComponent(0.35)
             bEdicion = false
+        } else {
+            tfEdicion.backgroundColor = UIColor.green.withAlphaComponent(0.35)
+            bEdicion = true
         }
         
         if(bNombre == true && bLugar == true && bEditorial == true && bAno == true && bTitulo == true && bEdicion == true){
