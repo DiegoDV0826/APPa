@@ -8,8 +8,7 @@
 import UIKit
 import AVFoundation
 
-class CapituloLibroViewController: UIViewController, UIPopoverPresentationControllerDelegate {
-
+class CapituloLibroViewController: UIViewController, UIPopoverPresentationControllerDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var tfAutor: UITextField!
     @IBOutlet weak var tfLugar: UITextField!
@@ -43,6 +42,8 @@ class CapituloLibroViewController: UIViewController, UIPopoverPresentationContro
     var bTodos : Bool = false
     var audioPlayer: AVAudioPlayer?
     
+    var pressed : Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -59,6 +60,27 @@ class CapituloLibroViewController: UIViewController, UIPopoverPresentationContro
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(quitarTeclado))
         view.addGestureRecognizer(tap)
+        
+        //Mover View por teclado
+        NotificationCenter.default.addObserver(self, selector: #selector(KeyboardWillChange(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(KeyboardWillChange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(KeyboardWillChange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        
+        tfAutor.delegate = self
+        tfLugar.delegate = self
+        tfEditorial.delegate = self
+        tfAno.delegate = self
+        tfTituloLibro.delegate = self
+        tfEdicion.delegate = self
+        tfAutorCapitulo.delegate = self
+        tfTituloCapitulo.delegate = self
+        tfPagina.delegate = self
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
     
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
@@ -250,6 +272,7 @@ class CapituloLibroViewController: UIViewController, UIPopoverPresentationContro
         }
     }
     
+    //Método para que la pantalla no rote
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return UIInterfaceOrientationMask.landscape
     }
     
@@ -257,7 +280,31 @@ class CapituloLibroViewController: UIViewController, UIPopoverPresentationContro
             return false
     }
     
+    //Método para quitar el teclado
     @IBAction func quitarTeclado(){
         view.endEditing(true)
     }
+    
+    //Método para poder mover el view con el teclado
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if textField == tfEdicion || textField == tfAutorCapitulo || textField == tfTituloCapitulo || textField == tfPagina{
+            pressed = true
+        } else {
+            pressed = false
+        }
+    }
+    
+    @objc func KeyboardWillChange(notification: Notification ) {
+        guard let keyboardReact = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+            return
+        }
+        
+        if (notification.name == UIResponder.keyboardWillShowNotification || notification.name == UIResponder.keyboardWillChangeFrameNotification) && pressed {
+            view.frame.origin.y = -keyboardReact.height
+            
+        } else {
+            view.frame.origin.y = 0
+        }
+    }
+    
 }
