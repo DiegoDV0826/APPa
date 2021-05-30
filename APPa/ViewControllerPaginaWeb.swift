@@ -333,13 +333,4 @@ class ViewControllerPaginaWeb: UIViewController, UICollectionViewDelegate, UICol
             return false
     }
     
-    @IBAction func info(_ sender: Any) {
-        let alerta = UIAlertController(title: "Información", message: "Arrastra los items que aparecen en la parte inferior hacia la parte superior para comenzar a crear la referencia. En caso de confundirte, puedes presionar el botón en forma de basurero para comenzar de nuevo", preferredStyle: .alert)
-
-        let accion = UIAlertAction(title: "Entendido", style: .cancel, handler: nil)
-        
-        alerta.addAction(accion)
-        
-        present(alerta, animated: true, completion: nil)
-    }
 }
