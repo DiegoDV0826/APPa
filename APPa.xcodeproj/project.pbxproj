@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		41A46B12264EEDD6003F5089 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A46B11264EEDD6003F5089 /* CollectionViewCell.swift */; };
 		41A46B15264EEF33003F5089 /* CollectionViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A46B14264EEF33003F5089 /* CollectionViewCell2.swift */; };
+		471A581626649FD600C18915 /* ViewControllerCreditos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471A581526649FD600C18915 /* ViewControllerCreditos.swift */; };
 		4777F63A264DD7980072C431 /* TableViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4777F639264DD7980072C431 /* TableViewControllerInfo.swift */; };
 		47BDB9802630D56000E33BDB /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BDB97F2630D56000E33BDB /* ConfigurationViewController.swift */; };
 		D380754526311FBC000EA355 /* ViewControllerPaginaWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D380754426311FBC000EA355 /* ViewControllerPaginaWeb.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		41A46B11264EEDD6003F5089 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = APPa/CollectionViewCell.swift; sourceTree = "<group>"; };
 		41A46B14264EEF33003F5089 /* CollectionViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CollectionViewCell2.swift; path = APPa/CollectionViewCell2.swift; sourceTree = "<group>"; };
+		471A581526649FD600C18915 /* ViewControllerCreditos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCreditos.swift; sourceTree = "<group>"; };
 		4777F639264DD7980072C431 /* TableViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerInfo.swift; sourceTree = "<group>"; };
 		47BDB97F2630D56000E33BDB /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		D380754426311FBC000EA355 /* ViewControllerPaginaWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPaginaWeb.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		F222A37B262CCDD800A6967F = {
 			isa = PBXGroup;
 			children = (
+				471A581526649FD600C18915 /* ViewControllerCreditos.swift */,
 				F2CA061726609D0D003DAD30 /* LogoViewController.swift */,
 				F21B31C52650947800B77615 /* PaginaViewController.swift */,
 				F21B31C226507AA700B77615 /* LibroEditorViewController.swift */,
@@ -240,6 +243,7 @@
 				F279EB49264ED79A005424D6 /* EditorialViewController.swift in Sources */,
 				F228CA85264DADD3001C6DDA /* QueTeInteresaAprenderViewController.swift in Sources */,
 				F222A388262CCDD800A6967F /* AppDelegate.swift in Sources */,
+				471A581626649FD600C18915 /* ViewControllerCreditos.swift in Sources */,
 				F21B31B6265063E600B77615 /* PaginaLibroViewController.swift in Sources */,
 				F2CA061826609D0D003DAD30 /* LogoViewController.swift in Sources */,
 				F21B31B92650641800B77615 /* LibroImpresoViewController.swift in Sources */,
