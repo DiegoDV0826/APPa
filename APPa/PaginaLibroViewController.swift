@@ -114,9 +114,6 @@ class PaginaLibroViewController: UIViewController, UIPopoverPresentationControll
             if tfEdicion.text != "" {
                 arrAux.append("(" + tfEdicion.text! + ").")
             }
-            else{
-                arrAux.append("(Ed.)" )
-            }
             if tfLugar.text != "" {
                 arrAux.append(tfLugar.text! + ": ")
             }

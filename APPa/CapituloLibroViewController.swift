@@ -119,15 +119,12 @@ class CapituloLibroViewController: UIViewController, UIPopoverPresentationContro
                 arrAux.append("(s.f.).")
             }
             arrAux.append(tfTituloCapitulo.text! + ".")
-            arrAux.append("En " + tfAutorCapitulo.text!)
+            arrAux.append("En " + tfAutorCapitulo.text! + " (Ed.),")
+            arrAux.append(tfTituloLibro.text!)
+            arrAux.append(" (" + tfPagina.text! + ").")
             if tfEdicion.text != "" {
                 arrAux.append("(" + tfEdicion.text! + ").")
             }
-            else{
-                arrAux.append(" (Ed.)." )
-            }
-            arrAux.append(tfTituloLibro.text!)
-            arrAux.append(" (" + tfPagina.text! + ").")
             if tfLugar.text != "" {
                 arrAux.append(tfLugar.text! + ": ")
             }

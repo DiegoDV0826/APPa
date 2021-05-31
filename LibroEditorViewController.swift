@@ -98,19 +98,16 @@ class LibroEditorViewController: UIViewController, UIPopoverPresentationControll
         }else if segue.identifier == "drag"{
             let vistaDrag = segue.destination as! ViewControllerPaginaWeb
             var arrAux: [String] = []
-            arrAux.append(tfNombre.text!)
-            if tfEdicion.text != "" {
-                arrAux.append("(" + tfEdicion.text! + ").")
-            }
-            else{
-                arrAux.append("(Ed.)" )
-            }
+            arrAux.append(tfNombre.text! + "(Ed.).")
             if tfAno.text != ""{
                 arrAux.append("(" + tfAno.text! + ").")
             }else {
                 arrAux.append("(s.f.).")
             }
             arrAux.append(tfTitulo.text! + ".")
+            if tfEdicion.text != "" {
+                arrAux.append("(" + tfEdicion.text! + ").")
+            }
             if tfLugar.text != "" {
                 arrAux.append(tfLugar.text! + ": ")
             }
